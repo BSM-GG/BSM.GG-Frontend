@@ -1,27 +1,27 @@
 import { createGlobalStyle } from "styled-components";
-import PretendardMedium from "../fonts/Pretendard-Medium.ttf";
+import PretendardRegular from "../fonts/Pretendard-Regular.ttf";
 import PretendardBold from "../fonts/Pretendard-Bold.ttf";
 import PretendardExtraBold from "../fonts/Pretendard-ExtraBold.ttf";
 
 const GlobalStyle = createGlobalStyle`
 
 @font-face {
-  font-family: 'PretendardMedium';
-  src: local('Pretendard-Medium'), local('Pretendard-Medium');
+  font-family: 'PretendardRegular';
+  src: local('PretendardRegular'), local('PretendardRegular');
   font-style: normal;
-  src: url(${PretendardMedium}) format('truetype');
+  src: url(${PretendardRegular}) format('truetype');
 }
 
 @font-face {
   font-family: 'PretendardBold';
-  src: local('Pretendard-Bold'), local('Pretendard-Bold');
+  src: local('PretendardBold'), local('PretendardBold');
   font-style: normal;
   src: url(${PretendardBold}) format('truetype');
 }
 
 @font-face {
   font-family: 'PretendardExtraBold';
-  src: local('Pretendard-ExtraBold'), local('Pretendard-ExtraBold');
+  src: local('PretendardExtraBold'), local('PretendardExtraBold');
   font-style: normal;
   src: url(${PretendardExtraBold}) format('truetype');
 }
