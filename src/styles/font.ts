@@ -1,7 +1,7 @@
 const FontGenerator = (weight: number) => `
     font-family: ${
-      weight === 400
-        ? "PredtendardMedium"
+      weight === 500
+        ? "PretendardRegular"
         : weight === 700
         ? "PretendardBold"
         : "PretendardExtraBold"
@@ -9,7 +9,7 @@ const FontGenerator = (weight: number) => `
 `;
 
 export const fonts = {
-  Medium: FontGenerator(400),
+  Regular: FontGenerator(500),
   Bold: FontGenerator(700),
   ExtraBold: FontGenerator(800),
 };
