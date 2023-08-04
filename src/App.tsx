@@ -1,7 +1,5 @@
-import LandingPage from "./pages/landingpage";
-
 function App() {
-  return <LandingPage></LandingPage>;
+  return <></>;
 }
 
 export default App;
