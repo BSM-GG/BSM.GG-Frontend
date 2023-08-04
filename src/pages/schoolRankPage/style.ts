@@ -6,20 +6,26 @@ export const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-top: 5rem;
 `;
 
 export const CenterWrapper = styled.div`
   width: 80vw;
-  height: 100vh;
+  height: 100%;
+`;
+
+export const RankingWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const GameTogetherWrapper = styled.div`
   width: 100%;
-  height: 20vh;
+  height: 200px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: space-between;
 `;
 
@@ -123,6 +129,8 @@ export const Win = styled.div`
 `;
 
 export const UserTable = styled.div`
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
 `;
@@ -156,5 +164,24 @@ export const Win2 = styled.div`
 `;
 
 export const Nav = styled.div`
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  width: 98%;
+  height: 65px;
+  font-size: 1.2rem;
+`;
+
+export const ArrowNav = styled.div`
+  cursor: pointer;
+  &:hover {
+    color: ${T.blue[700]};
+    transition: 0.3s ease-in-out;
+  }
+`;
+
+export const NumberNav = styled.div`
+  display: flex;
+  gap: 2.8rem;
+  cursor: pointer;
 `;
