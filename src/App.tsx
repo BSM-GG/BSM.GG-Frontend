@@ -1,7 +1,8 @@
-import 
-
 function App() {
-  return <Header></Header>;
+  return (
+    <>
+    </>
+  );
 }
 
 export default App;
