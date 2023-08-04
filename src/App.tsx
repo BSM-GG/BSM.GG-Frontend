@@ -1,5 +1,11 @@
+import RankPage from "./pages/schoolRankPage";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <RankPage />
+    </>
+  );
 }
 
 export default App;
