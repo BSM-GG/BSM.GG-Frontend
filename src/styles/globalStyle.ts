@@ -30,6 +30,11 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 input {
   border: none;
 	outline: none;
