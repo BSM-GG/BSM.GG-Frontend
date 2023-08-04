@@ -28,6 +28,11 @@ export default Header;
 const Container = styled.div`
   width: 100vw;
   height: 5rem;
+
+  position: fixed;
+  top: 0%;
+  left: 0%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;

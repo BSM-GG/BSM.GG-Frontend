@@ -1,7 +1,7 @@
-import 
+import LandingPage from "./pages/landingpage";
 
 function App() {
-  return <Header></Header>;
+  return <LandingPage></LandingPage>;
 }
 
 export default App;
