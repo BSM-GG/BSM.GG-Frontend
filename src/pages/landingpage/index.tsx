@@ -35,6 +35,7 @@ const Container = styled.div`
   align-items: center;
 
   gap: 4rem;
+  margin-bottom: 5rem;
 `;
 
 const InputContainer = styled.div`
