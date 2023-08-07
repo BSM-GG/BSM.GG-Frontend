@@ -1,18 +1,17 @@
-import { ReactNode } from "react";
 import styled from "styled-components";
 import FlexBoxAttribute from "../../types/FlexBoxAttributeProps.type";
 
-const Flex = (
-  {
-    direction = "row",
-    justifyContent = "flex-start",
-    alignItems = "flex-start",
-    gap = 0,
-  }: FlexBoxAttribute,
-  children: ReactNode
-) => {
+const Flex = ({
+  direction = "row",
+  justifyContent = "flex-start",
+  alignItems = "flex-start",
+  gap = 0,
+  children,
+}: FlexBoxAttribute) => {
   return (
-    <FlexBox FlexInfo={{ direction, justifyContent, alignItems, gap }}>
+    <FlexBox
+      FlexInfo={{ direction, justifyContent, alignItems, gap, children }}
+    >
       {children}
     </FlexBox>
   );
