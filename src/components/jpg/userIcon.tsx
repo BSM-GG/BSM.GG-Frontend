@@ -21,5 +21,5 @@ const ImgContainer = styled.div<{ size: JPGAttributeProps }>`
 
   background-color: white;
   background-image: url(${(props) => props.size.imgLink});
-  background-size: cover;
+  background-size: contain;
 `;
