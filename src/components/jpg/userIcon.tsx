@@ -4,6 +4,7 @@ import { styled } from "styled-components";
 const UserIcon = ({
   width = 9,
   height = 9,
+  bgColor = "white",
   borderRadius = 10,
   imgLink = "https://mblogthumb-phinf.pstatic.net/MjAxODA1MTdfMjEy/MDAxNTI2NTQ3NTYzMDI0.bbA7IVTT_T9sN7-TO-UCiJ9ZRJtlpdEwP-0sjvdqmkwg.rxZ3WIycXzknUNEHwwh4h6riykM6I6KT1IZItaDePrEg.PNG.heekyun93/04c66e50b1888117.png?type=w800",
 }: JPGAttributeProps) => {
@@ -19,7 +20,8 @@ const ImgContainer = styled.div<{ size: JPGAttributeProps }>`
   border: none;
   border-radius: ${(props) => props.size.borderRadius}px;
 
-  background-color: white;
   background-image: url(${(props) => props.size.imgLink});
   background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
