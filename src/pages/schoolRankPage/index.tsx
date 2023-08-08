@@ -7,13 +7,13 @@ const SchoolRank = () => {
   const [startPage, setStartPage] = useState(1);
 
   const onClickPrevPage = () => {
-    if (startPage < 2) return;
-    setStartPage((prev) => prev - 1);
+    if (startPage < 5) return;
+    setStartPage((prev) => prev - 5);
   };
 
   const onClickNextPage = () => {
-    if (startPage + 1 > dummy.length) return;
-    setStartPage((prev) => prev + 1);
+    if (startPage + 5 > 100) return;
+    setStartPage((prev) => prev + 5);
   };
 
   return (
@@ -58,23 +58,23 @@ const SchoolRank = () => {
         </S.UserTable>
         <S.Nav>
           <S.NumberNav>
-            <S.ArrowNav onClick={onClickPrevPage}>{"<"}</S.ArrowNav>
-            {Array(10)
+            <S.ArrowNav onClick={onClickPrevPage}> {"<"} </S.ArrowNav>
+
+            {Array(5)
               .fill(1)
               .map((el, index) => (
-                <div
-                  key={index}
-                  onClick={() => setStartPage(startPage + index)}
-                  style={{
-                    fontWeight:
-                      startPage === startPage + index ? "bold" : "normal",
-                    cursor: "pointer",
+                <S.Number
+                  id={String(index + startPage)}
+                  key={index + startPage}
+                  onClick={() => {
+                    console.log(index + startPage);
                   }}
                 >
-                  {startPage + index}
-                </div>
+                  {index + startPage}
+                </S.Number>
               ))}
-            <S.ArrowNav onClick={onClickNextPage}>{">"}</S.ArrowNav>
+
+            <S.ArrowNav onClick={onClickNextPage}> {">"} </S.ArrowNav>
           </S.NumberNav>
         </S.Nav>
       </S.CenterWrapper>

@@ -12,8 +12,8 @@ export const Wrapper = styled.div`
 `;
 
 export const CenterWrapper = styled.div`
-  width: 80vw;
-  height: 100%;
+  width: max-content;
+  height: max-content;
 `;
 
 export const RankingWrapper = styled.div`
@@ -22,8 +22,8 @@ export const RankingWrapper = styled.div`
 `;
 
 export const GameTogetherWrapper = styled.div`
-  width: 100%;
-  height: 200px;
+  width: 75rem;
+  height: 12.5rem;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -36,15 +36,15 @@ export const GameRankTitle = styled.div`
 `;
 
 export const SearchInputWrapper = styled.div`
-  width: 25%;
-  height: 6vh;
+  width: 18.75rem;
+  height: 2.5rem;
   display: flex;
   justify-content: end;
   border-bottom: 1px solid ${T.blue[700]};
 `;
 
 export const SearchInput = styled.input`
-  width: 90%;
+  width: 16.875rem;
   font-size: 1rem;
   color: black;
   &::placeholder {
@@ -53,8 +53,8 @@ export const SearchInput = styled.input`
 `;
 
 export const SearchIcon = styled.div`
-  width: 10%;
-  height: 100%;
+  width: 2rem;
+  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,8 +62,8 @@ export const SearchIcon = styled.div`
 `;
 
 export const RankNav = styled.div`
-  width: 100%;
-  height: 40px;
+  width: 75rem;
+  height: 2.5rem;
   border-radius: 5px;
   margin-top: 30px;
   background-color: ${T.blue[700]};
@@ -72,7 +72,7 @@ export const RankNav = styled.div`
 `;
 
 export const RankNumber = styled.div`
-  width: 4vw;
+  width: 3rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -80,41 +80,39 @@ export const RankNumber = styled.div`
 `;
 
 export const UserName = styled.div`
-  width: 30vw;
+  width: 15rem;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
-  margin-left: 10px;
+  justify-content: center;
 `;
 
 export const Tier = styled.div`
-  width: 8vw;
+  width: 20rem;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 `;
 
 export const Lp = styled.div`
-  width: 8vw;
+  width: 9rem;
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: start;
 `;
 
 export const MostChampion = styled.div`
-  width: 14vw;
+  width: 16rem;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: start;
-  gap: 0.5rem;
+  gap: 1.1rem;
 `;
 
 export const Level = styled.div`
-  width: 10vw;
+  width: 6.8rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -122,31 +120,28 @@ export const Level = styled.div`
 `;
 
 export const Win = styled.div`
-  width: 6vw;
-  height: 100%;
+  width: 4.2rem;
+  height: 2.5rem;
   display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 `;
 
 export const UserTable = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100vh;
+  width: 75rem;
+  height: 45rem;
 `;
 
 export const UserWrapper = styled.div`
-  width: 100%;
-  height: 10%;
+  width: 75rem;
+  height: 100rem;
   margin-top: 0.5rem;
   background-color: ${T.gray[200]};
   display: flex;
-`;
-
-export const NumberTab = styled.div`
-  width: 100%;
-  height: 5rem;
-  background-color: orange;
 `;
 
 export const Img = styled.img`
@@ -156,11 +151,14 @@ export const Img = styled.img`
 `;
 
 export const Win2 = styled.div`
-  width: 6vw;
+  width: 5rem;
   height: 100%;
   display: flex;
   align-items: center;
   color: ${T.red[400]};
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const Nav = styled.div`
@@ -173,15 +171,23 @@ export const Nav = styled.div`
 `;
 
 export const ArrowNav = styled.div`
+  height: 1.5rem;
   cursor: pointer;
   &:hover {
     color: ${T.blue[700]};
     transition: 0.3s ease-in-out;
   }
+  padding: 0 2rem 0 2rem;
 `;
 
 export const NumberNav = styled.div`
   display: flex;
-  gap: 2.8rem;
+  gap: 4rem;
+`;
+
+export const Number = styled.div`
   cursor: pointer;
+  &:active {
+    color: blue;
+  }
 `;
