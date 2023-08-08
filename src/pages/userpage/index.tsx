@@ -33,8 +33,8 @@ const UserPage = () => {
                   imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
                 />
                 <C.Flex direction="column" gap={0.25}>
-                  <C.Text size={1.5}>Challenger</C.Text>
-                  <C.Text size={0.75}>524LP</C.Text>
+                  <C.Text textSize={1.5}>Challenger</C.Text>
+                  <C.Text textSize={0.75}>524LP</C.Text>
                 </C.Flex>
               </UserRankScoreContainer>
             </C.Flex>
@@ -50,11 +50,16 @@ const UserPage = () => {
                   imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
                 />
                 <C.Flex direction="column" gap={0.25}>
-                  <C.Text size={1.5}>Challenger</C.Text>
-                  <C.Text size={0.75}>524LP</C.Text>
+                  <C.Text textSize={1.5}>Challenger</C.Text>
+                  <C.Text textSize={0.75}>524LP</C.Text>
                 </C.Flex>
               </UserRankScoreContainer>
             </C.Flex>
+            <UserChampionInfoContainer>
+              {Array.from({ length: 5 }).map(() => (
+                <C.UserChampionInfo />
+              ))}
+            </UserChampionInfoContainer>
           </UserRankInfoContainer>
         </UserRecordContainer>
       </Container>
@@ -189,4 +194,19 @@ const UserRankScoreContainer = styled.div`
   box-sizing: border-box;
 
   background-color: ${T.gray[100]};
+`;
+
+const UserChampionInfoContainer = styled.div`
+  width: max-content;
+  height: max-content;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.75rem;
+
+  background-color: ${T.gray[100]};
+  border-radius: 0.625rem;
 `;
