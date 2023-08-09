@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import * as C from "../../components/index";
 import * as T from "../../styles/theme";
 import MainLogo from "../../components/svg/mainLogo";
 import SearchIcon from "../../components/svg/searchIcon";
@@ -8,7 +7,6 @@ import { fonts } from "../../styles/font";
 const LandingPage = () => {
   return (
     <>
-      <C.Header />
       <Container>
         <MainLogo width={24.588} height={7.438}></MainLogo>
         <InputContainer>
