@@ -6,6 +6,5 @@ function App() {
       <RankPage />
     </>
   );
-}
 
 export default App;

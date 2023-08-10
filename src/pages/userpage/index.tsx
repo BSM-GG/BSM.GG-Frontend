@@ -1,0 +1,212 @@
+import styled from "styled-components";
+import * as C from "../../components/index";
+import * as T from "../../styles/theme";
+import { fonts } from "../../styles/font";
+import UserIcon from "../../components/jpg/userIcon";
+
+const UserPage = () => {
+  return (
+    <>
+      <C.Header />
+      <Container>
+        <UserProfileContainer>
+          <UserIcon />
+          <UserInfoContainer>
+            <TextContainer>
+              <UserLevel>LV 54</UserLevel>
+              <UserName>상진콧구멍십팔센</UserName>
+            </TextContainer>
+            <ReloadUserRecordButton>전적 갱신</ReloadUserRecordButton>
+          </UserInfoContainer>
+        </UserProfileContainer>
+        <UserRecordContainer>
+          <UserRankInfoContainer>
+            <C.Flex direction="column">
+              <RankgameTypeContainer>솔로랭크</RankgameTypeContainer>
+              <UserRankScoreContainer>
+                <UserIcon
+                  width={4.75}
+                  height={4.75}
+                  bgColor={T.gray[400]}
+                  borderRadius={99}
+                  imgSize="90%"
+                  imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
+                />
+                <C.Flex direction="column" gap={0.25}>
+                  <C.Text textSize={1.5}>Challenger</C.Text>
+                  <C.Text textSize={0.75}>524LP</C.Text>
+                </C.Flex>
+              </UserRankScoreContainer>
+            </C.Flex>
+            <C.Flex direction="column">
+              <RankgameTypeContainer>자유랭크</RankgameTypeContainer>
+              <UserRankScoreContainer>
+                <UserIcon
+                  width={4.75}
+                  height={4.75}
+                  bgColor={T.gray[400]}
+                  borderRadius={99}
+                  imgSize="90%"
+                  imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
+                />
+                <C.Flex direction="column" gap={0.25}>
+                  <C.Text textSize={1.5}>Challenger</C.Text>
+                  <C.Text textSize={0.75}>524LP</C.Text>
+                </C.Flex>
+              </UserRankScoreContainer>
+            </C.Flex>
+            <UserChampionInfoContainer>
+              {Array.from({ length: 5 }).map(() => (
+                <C.UserChampionInfo />
+              ))}
+            </UserChampionInfoContainer>
+          </UserRankInfoContainer>
+        </UserRecordContainer>
+      </Container>
+    </>
+  );
+};
+
+export default UserPage;
+
+const Container = styled.div`
+  width: max-content;
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
+
+const UserProfileContainer = styled.div`
+  width: 85rem;
+  height: 13.75rem;
+
+  background-color: ${T.gray[100]};
+
+  padding: 2.5rem;
+  box-sizing: border-box;
+
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+`;
+
+const UserInfoContainer = styled.div`
+  width: max-content;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+`;
+
+const TextContainer = styled.div`
+  width: max-content;
+  height: max-content;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.25rem;
+`;
+
+const UserLevel = styled.span`
+  ${fonts.Regular}
+  color: ${T.gray[600]};
+
+  font-size: 1rem;
+`;
+
+const UserName = styled.span`
+  ${fonts.Bold}
+  color: black;
+
+  font-size: 2rem;
+`;
+
+const ReloadUserRecordButton = styled.div`
+  width: max-content;
+  height: max-content;
+
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  background-color: ${T.blue[700]};
+
+  ${fonts.Regular}
+  font-size: 1rem;
+  color: white;
+
+  border-radius: 0.625rem;
+
+  cursor: pointer;
+  transition: 0.75s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  &:hover {
+    background-color: ${T.blue[600]};
+  }
+`;
+
+const UserRecordContainer = styled.div`
+  width: 85rem;
+  height: max-content;
+
+  display: flex;
+  gap: 1rem;
+`;
+
+const UserRankInfoContainer = styled.div`
+  display: flex;
+
+  flex-direction: column;
+  gap: 1.25rem;
+`;
+
+const RankgameTypeContainer = styled.div`
+  width: 25rem;
+  height: 2.625rem;
+
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+
+  background-color: ${T.gray[300]};
+
+  ${fonts.Bold}
+  font-size: 0.925rem;
+  color: black;
+
+  padding: 0.75rem 1.25rem;
+  box-sizing: border-box;
+`;
+
+const UserRankScoreContainer = styled.div`
+  width: 25rem;
+  height: 8.125rem;
+
+  display: flex;
+  gap: 1rem;
+
+  border-radius: 0.625rem;
+
+  padding: 1.75rem;
+  box-sizing: border-box;
+
+  background-color: ${T.gray[100]};
+`;
+
+const UserChampionInfoContainer = styled.div`
+  width: max-content;
+  height: max-content;
+
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.75rem;
+
+  background-color: ${T.gray[100]};
+  border-radius: 0.625rem;
+`;
