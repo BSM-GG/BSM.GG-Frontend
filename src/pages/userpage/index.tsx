@@ -7,7 +7,6 @@ import UserIcon from "../../components/jpg/userIcon";
 const UserPage = () => {
   return (
     <>
-      <C.Header />
       <Container>
         <UserProfileContainer>
           <UserIcon />
