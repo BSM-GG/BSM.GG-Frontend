@@ -10,14 +10,21 @@ const UserPage = () => {
       <C.Header />
       <Container>
         <UserProfileContainer>
-          <UserIcon />
-          <UserInfoContainer>
-            <TextContainer>
-              <UserLevel>LV 54</UserLevel>
-              <UserName>상진콧구멍십팔센</UserName>
-            </TextContainer>
-            <ReloadUserRecordButton>전적 갱신</ReloadUserRecordButton>
-          </UserInfoContainer>
+          <C.Flex gap={2}>
+            <UserIcon bgColor="none" />
+            <UserInfoContainer>
+              <TextContainer>
+                <UserLevel>LV 54</UserLevel>
+                <UserName>상진콧구멍십팔센</UserName>
+              </TextContainer>
+              <ReloadUserRecordButton>전적 갱신</ReloadUserRecordButton>
+            </UserInfoContainer>
+          </C.Flex>
+          <UserIcon
+            imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
+            bgColor="none"
+            imgSize="115%"
+          />
         </UserProfileContainer>
         <UserRecordContainer>
           <UserRankInfoContainer>
@@ -76,13 +83,16 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  margin: 13.5rem 0;
 `;
 
 const UserProfileContainer = styled.div`
   width: 85rem;
   height: 13.75rem;
 
-  background-color: ${T.gray[100]};
+  background: linear-gradient(to right, #e8ffff, #1b7092);
+  box-shadow: 0px 0px 20px #92f2ff;
 
   padding: 2.5rem;
   box-sizing: border-box;
@@ -90,13 +100,12 @@ const UserProfileContainer = styled.div`
   border-radius: 0.5rem;
 
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
 `;
 
 const UserInfoContainer = styled.div`
   width: max-content;
-  height: 100%;
+  height: 8.75rem;
 
   display: flex;
   flex-direction: column;

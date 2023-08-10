@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import * as C from "../../components";
+import * as C from "..";
 import * as T from "../../styles/theme";
 import UserIcon from "../jpg/userIcon";
 
