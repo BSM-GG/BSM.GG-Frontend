@@ -1,33 +1,18 @@
 import JPGAttributeProps from "../../types/JPGAttributeProps.type";
 import { styled } from "styled-components";
 
-const UserIcon = ({
-  width = 9,
-  height = 9,
-  bgColor = "white",
-  imgSize = "contain",
-  borderRadius = 10,
-  imgLink = "https://mblogthumb-phinf.pstatic.net/MjAxODA1MTdfMjEy/MDAxNTI2NTQ3NTYzMDI0.bbA7IVTT_T9sN7-TO-UCiJ9ZRJtlpdEwP-0sjvdqmkwg.rxZ3WIycXzknUNEHwwh4h6riykM6I6KT1IZItaDePrEg.PNG.heekyun93/04c66e50b1888117.png?type=w800",
-}: JPGAttributeProps) => {
-  return (
-    <ImgContainer
-      size={{ width, height, borderRadius, imgLink, bgColor, imgSize }}
-    />
-  );
-};
-
-export default UserIcon;
-
-const ImgContainer = styled.div<{ size: JPGAttributeProps }>`
-  width: ${(props) => props.size.width}rem;
-  height: ${(props) => props.size.height}rem;
+const UserIcon = styled.div<JPGAttributeProps>`
+  width: ${(props) => props.width}rem;
+  height: ${(props) => props.height}rem;
 
   border: none;
-  border-radius: ${(props) => props.size.borderRadius}px;
+  border-radius: ${(props) => props.borderRadius}px;
 
-  background-color: ${(props) => props.size.bgColor};
-  background-image: url(${(props) => props.size.imgLink});
-  background-size: ${(props) => props.size.imgSize};
+  background-color: ${(props) => props.bgColor};
+  background-image: url(${(props) => props.imgLink});
+  background-size: ${(props) => props.imgSize};
   background-position: center;
   background-repeat: no-repeat;
 `;
+
+export default UserIcon;
