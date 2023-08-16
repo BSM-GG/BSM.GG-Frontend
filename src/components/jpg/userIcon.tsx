@@ -6,11 +6,11 @@ const UserIcon = styled.div<JPGAttributeProps>`
   height: ${(props) => props.height}rem;
 
   border: none;
-  border-radius: ${(props) => props.borderRadius}px;
+  border-radius: ${(props) => props.BorderRadius}px;
 
-  background-color: ${(props) => props.bgColor};
-  background-image: url(${(props) => props.imgLink});
-  background-size: ${(props) => props.imgSize};
+  background-color: ${(props) => props.BgColor};
+  background-image: url(${(props) => props.ImgLink});
+  background-size: ${(props) => props.ImgSize};
   background-position: center;
   background-repeat: no-repeat;
 `;

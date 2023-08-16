@@ -8,9 +8,9 @@ const Flex = styled.div<FlexBoxAttribute>`
   display: flex;
 
   flex-direction: ${(props) => props.direction};
-  justify-content: ${(props) => props.justifyContent};
+  justify-content: ${(props) => props.JustifyContent};
   align-items: ${(props) => props.direction};
-  gap: ${(props) => props.gap}rem;
+  gap: ${(props) => props.Gap}rem;
 `;
 
 export default Flex;
