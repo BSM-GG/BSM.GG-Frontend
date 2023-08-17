@@ -1,5 +1,5 @@
 import React from "react";
-import * as C from "../../components";
+import { Text } from "../../components/common";
 import * as T from "../../styles/theme";
 import { styled } from "styled-components";
 import { fonts } from "../../styles/font";
@@ -9,9 +9,9 @@ const DuoRequestPage = () => {
   return (
     <Container>
       <HGroup>
-        <C.Text color={T.blue[700]} size={1.5}>
+        <Text color={T.blue[700]} textSize={1.5}>
           같이 게임하자
-        </C.Text>
+        </Text>
         <WriteButton />
       </HGroup>
       <RequestList>
