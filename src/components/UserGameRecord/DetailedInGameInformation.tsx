@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import * as C from "../index";
 import * as T from "../../styles/theme";
+import { Flex, Text } from "../common";
 import { fonts } from "../../styles/font";
 import UserIcon from "../jpg/userIcon";
 
 const DetailedInGameInformation = () => {
   return (
     <Container>
-      <C.Flex gap={0.5}>
+      <Flex gap={0.5}>
         <ChampionIcon
           width={4.5}
           height={4.5}
@@ -15,8 +15,8 @@ const DetailedInGameInformation = () => {
           imgLink="assets/champion_portrait/Aatrox.webp"
           level="11"
         />
-        <C.Flex gap={0.1}>
-          <C.Flex direction="column" gap={0.25} alignItems="flex-end">
+        <Flex gap={0.1}>
+          <Flex direction="column" gap={0.25} alignItems="flex-end">
             <UserIcon
               width={1.7}
               height={1.7}
@@ -29,8 +29,8 @@ const DetailedInGameInformation = () => {
               borderRadius={5}
               imgLink="https://i.namu.wiki/i/nrCKZrvop6MBRIXq8sbhYx_LlUYGrNFcg1bnWKcJoHzqXnhk3vOXTcI25i-LDu8CItZeIuqGE-bsET4wPVC4jw.webp"
             />
-          </C.Flex>
-          <C.Flex direction="column" gap={0.25}>
+          </Flex>
+          <Flex direction="column" gap={0.25}>
             <UserIcon
               width={1.7}
               height={1.7}
@@ -43,25 +43,25 @@ const DetailedInGameInformation = () => {
               imgSize="80%"
               imgLink="https://i.namu.wiki/i/1QegZsPLVKQJMe041Om3LmwTs9JvZn0cOhlxsbugap0zPMliwmCuBnYEHOmDc-rd6XBkF4h75wkD1akwbEHgMw.webp"
             />
-          </C.Flex>
-          <C.Flex direction="column" gap={0.75}>
-            <C.Flex>
-              <C.Text type={fonts.Regular} textSize={1.15}>
+          </Flex>
+          <Flex direction="column" gap={0.75}>
+            <Flex>
+              <Text type={fonts.Regular} textSize={1.15}>
                 12 /&nbsp;
-              </C.Text>
-              <C.Text type={fonts.Regular} textSize={1.15} color="red">
+              </Text>
+              <Text type={fonts.Regular} textSize={1.15} color="red">
                 4
-              </C.Text>
-              <C.Text type={fonts.Regular} textSize={1.15}>
+              </Text>
+              <Text type={fonts.Regular} textSize={1.15}>
                 &nbsp;/ 15
-              </C.Text>
-            </C.Flex>
-            <C.Text type={fonts.Regular} color={T.blue[600]}>
+              </Text>
+            </Flex>
+            <Text type={fonts.Regular} color={T.blue[600]}>
               6.75:1 평점
-            </C.Text>
-          </C.Flex>
-        </C.Flex>
-      </C.Flex>
+            </Text>
+          </Flex>
+        </Flex>
+      </Flex>
     </Container>
   );
 };

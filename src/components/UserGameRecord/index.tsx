@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import * as T from "../../styles/theme";
-import * as C from "../../components";
 import { fonts } from "../../styles/font";
 import GameStatus from "./GameStatus";
 import InGameInformation from "./InGameInformation";
