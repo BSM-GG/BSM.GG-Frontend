@@ -12,7 +12,10 @@ const UserPage = () => {
       <Container>
         <UserProfileContainer>
           <C.Flex Gap={2}>
-            <UserIcon BgColor="none" />
+            <UserIcon
+              BgColor="none"
+              ImgLink="https://yt3.googleusercontent.com/ytc/AOPolaResdZdcww3BSR0bGFsCTfxsKd1__xFXwSxqQ4qRg=s900-c-k-c0x00ffffff-no-rj"
+            />
             <UserInfoContainer>
               <TextContainer>
                 <UserLevel>LV 54</UserLevel>
