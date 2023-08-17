@@ -2,8 +2,8 @@ import { ReactNode } from "react";
 
 export default interface FlexBoxAttribute {
   direction?: string;
-  JustifyContent?: string;
-  AlignItems?: string;
-  Gap?: number;
+  justifyContent?: string;
+  alignItems?: string;
+  gap?: number;
   children: ReactNode;
 }

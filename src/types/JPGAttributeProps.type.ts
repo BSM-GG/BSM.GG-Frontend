@@ -1,9 +1,9 @@
 export default interface JPGAttributeProps {
   width?: number;
   height?: number;
-  BgColor?: string;
-  ImgSize?: string;
-  ImgPosition?: string;
-  BorderRadius?: number;
-  ImgLink?: string;
+  bgColor?: string;
+  imgSize?: string;
+  imgPosition?: string;
+  borderRadius?: number;
+  imgLink?: string;
 }

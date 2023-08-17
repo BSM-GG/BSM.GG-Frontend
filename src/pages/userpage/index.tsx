@@ -11,10 +11,10 @@ const UserPage = () => {
       <C.Header />
       <Container>
         <UserProfileContainer>
-          <C.Flex Gap={2}>
+          <C.Flex gap={2}>
             <UserIcon
-              BgColor="none"
-              ImgLink="https://yt3.googleusercontent.com/ytc/AOPolaResdZdcww3BSR0bGFsCTfxsKd1__xFXwSxqQ4qRg=s900-c-k-c0x00ffffff-no-rj"
+              bgColor="none"
+              imgLink="https://yt3.googleusercontent.com/ytc/AOPolaResdZdcww3BSR0bGFsCTfxsKd1__xFXwSxqQ4qRg=s900-c-k-c0x00ffffff-no-rj"
             />
             <UserInfoContainer>
               <TextContainer>
@@ -26,9 +26,9 @@ const UserPage = () => {
           </C.Flex>
           <UserIcon
             width={11}
-            ImgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
-            BgColor="none"
-            ImgSize="100%"
+            imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
+            bgColor="none"
+            imgSize="100%"
           />
         </UserProfileContainer>
         <UserRecordContainer>
@@ -39,14 +39,14 @@ const UserPage = () => {
                 <UserIcon
                   width={4.75}
                   height={4.75}
-                  BgColor={T.gray[400]}
-                  BorderRadius={99}
-                  ImgSize="70%"
-                  ImgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
+                  bgColor={T.gray[400]}
+                  borderRadius={99}
+                  imgSize="70%"
+                  imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
-                <C.Flex direction="column" Gap={0.25}>
-                  <C.Text TextSize={1.5}>Challenger</C.Text>
-                  <C.Text TextSize={0.75}>524LP</C.Text>
+                <C.Flex direction="column" gap={0.25}>
+                  <C.Text textSize={1.5}>Challenger</C.Text>
+                  <C.Text textSize={0.75}>524LP</C.Text>
                 </C.Flex>
               </UserRankScoreContainer>
             </C.Flex>
@@ -56,14 +56,14 @@ const UserPage = () => {
                 <UserIcon
                   width={4.75}
                   height={4.75}
-                  BgColor={T.gray[400]}
-                  BorderRadius={99}
-                  ImgSize="70%"
-                  ImgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
+                  bgColor={T.gray[400]}
+                  borderRadius={99}
+                  imgSize="70%"
+                  imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
-                <C.Flex direction="column" Gap={0.25}>
-                  <C.Text TextSize={1.5}>Challenger</C.Text>
-                  <C.Text TextSize={0.75}>524LP</C.Text>
+                <C.Flex direction="column" gap={0.25}>
+                  <C.Text textSize={1.5}>Challenger</C.Text>
+                  <C.Text textSize={0.75}>524LP</C.Text>
                 </C.Flex>
               </UserRankScoreContainer>
             </C.Flex>
@@ -73,16 +73,16 @@ const UserPage = () => {
               ))}
             </UserChampionInfoContainer>
           </UserRankInfoContainer>
-          <C.Flex direction="column" Gap={1}>
+          <C.Flex direction="column" gap={1}>
             <UserRecordHeaderContainer>
-              <C.Flex Gap={3.7}>
-                <C.Text type={fonts.Regular} TextSize={1.1}>
+              <C.Flex gap={3.7}>
+                <C.Text type={fonts.Regular} textSize={1.1}>
                   전체
                 </C.Text>
-                <C.Text type={fonts.Regular} TextSize={1.1}>
+                <C.Text type={fonts.Regular} textSize={1.1}>
                   솔로랭크
                 </C.Text>
-                <C.Text type={fonts.Regular} TextSize={1.1}>
+                <C.Text type={fonts.Regular} textSize={1.1}>
                   자유랭크
                 </C.Text>
               </C.Flex>

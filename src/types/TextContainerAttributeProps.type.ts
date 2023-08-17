@@ -2,8 +2,8 @@ import { CSSProperties } from "react";
 
 export default interface TextContainerAttributeProps {
   type?: string;
-  TextSize?: number;
+  textSize?: number;
   color?: string;
-  TextAlign?: CSSProperties["textAlign"];
+  textAlign?: CSSProperties["textAlign"];
   children: any;
 }
