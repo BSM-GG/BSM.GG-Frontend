@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import PretendardRegular from "../fonts/Pretendard-Regular.ttf";
+import PretendardMedium from "../fonts/Pretendard-Medium.ttf";
 import PretendardBold from "../fonts/Pretendard-Bold.ttf";
 import PretendardExtraBold from "../fonts/Pretendard-ExtraBold.ttf";
 
@@ -10,6 +11,13 @@ const GlobalStyle = createGlobalStyle`
   src: local('PretendardRegular'), local('PretendardRegular');
   font-style: normal;
   src: url(${PretendardRegular}) format('truetype');
+}
+
+@font-face {
+  font-family: 'PretendardMedium';
+  src: local('PretendardMedium'), local('PretendardMedium');
+  font-style: normal;
+  src: url(${PretendardMedium}) format('truetype');
 }
 
 @font-face {
@@ -25,6 +33,7 @@ const GlobalStyle = createGlobalStyle`
   font-style: normal;
   src: url(${PretendardExtraBold}) format('truetype');
 }
+
 
 * {
   margin: 0;
