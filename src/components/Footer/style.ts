@@ -2,15 +2,19 @@ import styled from "styled-components";
 import * as colors from "../../styles/theme";
 
 export const FooterWrapper = styled.div`
-  width: 100%;
-  height: 300px;
+  width: 100vw;
+  height: 15rem;
   background-color: ${colors.gray[100]};
+
+  display: flex;
+  justify-content: center;
+
+  margin-top: 13.5rem;
 `;
 
 export const AutoWrapper = styled.div`
-  margin: 0 auto;
   width: 80%;
-  height: 300px;
+  height: 100%;
 `;
 
 export const FooterLogoWrapper = styled.div`
@@ -37,6 +41,7 @@ export const FooterQNAList = styled.div`
   align-items: end;
   justify-content: end;
   gap: 1rem;
+  margin-bottom: 0.75rem;
 `;
 
 export const QNA = styled.div`

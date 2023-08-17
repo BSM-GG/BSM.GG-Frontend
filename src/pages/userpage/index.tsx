@@ -3,21 +3,32 @@ import * as C from "../../components/index";
 import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
 import UserIcon from "../../components/jpg/userIcon";
+import UserGameRecord from "../../components/UserGameRecord";
 
 const UserPage = () => {
   return (
     <>
-      <C.Header />
       <Container>
         <UserProfileContainer>
-          <UserIcon />
-          <UserInfoContainer>
-            <TextContainer>
-              <UserLevel>LV 54</UserLevel>
-              <UserName>상진콧구멍십팔센</UserName>
-            </TextContainer>
-            <ReloadUserRecordButton>전적 갱신</ReloadUserRecordButton>
-          </UserInfoContainer>
+          <C.Flex gap={2}>
+            <UserIcon
+              bgColor="none"
+              imgLink="https://yt3.googleusercontent.com/ytc/AOPolaResdZdcww3BSR0bGFsCTfxsKd1__xFXwSxqQ4qRg=s900-c-k-c0x00ffffff-no-rj"
+            />
+            <UserInfoContainer>
+              <TextContainer>
+                <UserLevel>LV 54</UserLevel>
+                <UserName>상진콧구멍십팔센</UserName>
+              </TextContainer>
+              <ReloadUserRecordButton>전적 갱신</ReloadUserRecordButton>
+            </UserInfoContainer>
+          </C.Flex>
+          <UserIcon
+            width={11}
+            imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
+            bgColor="none"
+            imgSize="100%"
+          />
         </UserProfileContainer>
         <UserRecordContainer>
           <UserRankInfoContainer>
@@ -29,8 +40,9 @@ const UserPage = () => {
                   height={4.75}
                   bgColor={T.gray[400]}
                   borderRadius={99}
-                  imgSize="90%"
-                  imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
+                  imgSize="80%"
+                  imgPosition="center 70%"
+                  imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
                 <C.Flex direction="column" gap={0.25}>
                   <C.Text textSize={1.5}>Challenger</C.Text>
@@ -46,8 +58,9 @@ const UserPage = () => {
                   height={4.75}
                   bgColor={T.gray[400]}
                   borderRadius={99}
-                  imgSize="90%"
-                  imgLink="https://support-leagueoflegends.riotgames.com/hc/article_attachments/4415894930323/Challenger_Emblem_2022.png"
+                  imgSize="80%"
+                  imgPosition="center 70%"
+                  imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
                 <C.Flex direction="column" gap={0.25}>
                   <C.Text textSize={1.5}>Challenger</C.Text>
@@ -61,6 +74,28 @@ const UserPage = () => {
               ))}
             </UserChampionInfoContainer>
           </UserRankInfoContainer>
+          <C.Flex direction="column" gap={1}>
+            <UserRecordHeaderContainer>
+              <C.Flex gap={3.7}>
+                <C.Text type={fonts.Regular} textSize={1.1}>
+                  전체
+                </C.Text>
+                <C.Text type={fonts.Regular} textSize={1.1}>
+                  솔로랭크
+                </C.Text>
+                <C.Text type={fonts.Regular} textSize={1.1}>
+                  자유랭크
+                </C.Text>
+              </C.Flex>
+              <SearchUserChampionRecordInput placeholder="챔피언 검색" />
+            </UserRecordHeaderContainer>
+            <UserGameRecord />
+            <UserGameRecord />
+            <UserGameRecord />
+            <UserGameRecord />
+            <UserGameRecord />
+            <UserGameRecord />
+          </C.Flex>
         </UserRecordContainer>
       </Container>
     </>
@@ -76,13 +111,16 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  margin: 13.5rem 0;
 `;
 
 const UserProfileContainer = styled.div`
   width: 85rem;
   height: 13.75rem;
 
-  background-color: ${T.gray[100]};
+  background: linear-gradient(to right, #e8ffff, #1b7092);
+  box-shadow: 0px 0px 20px #92f2ff;
 
   padding: 2.5rem;
   box-sizing: border-box;
@@ -90,13 +128,12 @@ const UserProfileContainer = styled.div`
   border-radius: 0.5rem;
 
   display: flex;
-  align-items: center;
-  gap: 2rem;
+  justify-content: space-between;
 `;
 
 const UserInfoContainer = styled.div`
   width: max-content;
-  height: 100%;
+  height: 8.75rem;
 
   display: flex;
   flex-direction: column;
@@ -209,4 +246,37 @@ const UserChampionInfoContainer = styled.div`
 
   background-color: ${T.gray[100]};
   border-radius: 0.625rem;
+`;
+
+const UserRecordHeaderContainer = styled.div`
+  width: 59rem;
+  height: 3.5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: ${T.gray[300]};
+
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+`;
+
+const SearchUserChampionRecordInput = styled.input`
+  width: 13.25rem;
+  height: 2rem;
+
+  background-color: white;
+  border: none;
+  outline: none;
+
+  ${fonts.Regular}
+  font-size: 0.9rem;
+
+  border-radius: 8px;
+
+  padding: 0.75rem 0.75rem;
+  box-sizing: border-box;
 `;

@@ -8,7 +8,7 @@ const Footer = () => {
         <S.FooterLogoWrapper>
           <BSMLogo />
         </S.FooterLogoWrapper>
-        <S.FooterQNAWrapper>
+        <S.FooterQNAWrapper>ㅌㅋㅊ
           <S.FooterQNAList>
             <S.QNA>공지사항</S.QNA>
             <S.QNA>문의하기</S.QNA>
