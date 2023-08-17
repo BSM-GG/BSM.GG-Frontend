@@ -25,7 +25,7 @@ export default LandingPage;
 
 const Container = styled.div`
   width: max-content;
-  height: max-content;
+  height: 100vh;
 
   display: flex;
   flex-direction: column;

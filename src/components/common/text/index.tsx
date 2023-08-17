@@ -1,25 +1,12 @@
 import TextContainerAttributeProps from "../../../types/TextContainerAttributeProps.type";
-import { styled } from "styled-components";
 import { fonts } from "../../../styles/font";
+import { styled } from "styled-components";
 
-const Text = ({
-  type = fonts.Bold,
-  size = 1,
-  color = "black",
-  children,
-}: TextContainerAttributeProps) => {
-  return (
-    <TextContainer style={{ type, size, color, children }}>
-      {children}
-    </TextContainer>
-  );
-};
+const Text = styled.div<TextContainerAttributeProps>`
+  ${(props) => props.type ?? fonts.Bold};
+  font-size: ${(props) => props.textSize ?? 1}rem;
+  text-align: ${(props) => props.textAlign};
+  color: ${(props) => props.color};
+`;
 
 export default Text;
-
-const TextContainer = styled.div<{ style: TextContainerAttributeProps }>`
-  ${(props) => props.style.type};
-  font-size: ${(props) => props.style.size}rem;
-
-  color: ${(props) => props.style.color};
-`;

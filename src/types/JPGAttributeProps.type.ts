@@ -3,6 +3,7 @@ export default interface JPGAttributeProps {
   height?: number;
   bgColor?: string;
   imgSize?: string;
+  imgPosition?: string;
   borderRadius?: number;
   imgLink?: string;
 }
