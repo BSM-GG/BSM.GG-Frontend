@@ -1,7 +1,10 @@
-import UserPage from "./pages/userpage";
+import RankPage from "./pages/schoolRankPage";
 
 function App() {
-  return <UserPage></UserPage>;
-}
+  return (
+    <>
+      <RankPage />
+    </>
+  );
 
 export default App;
