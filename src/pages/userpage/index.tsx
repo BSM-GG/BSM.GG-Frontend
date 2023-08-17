@@ -8,7 +8,6 @@ import UserGameRecord from "../../components/UserGameRecord";
 const UserPage = () => {
   return (
     <>
-      <C.Header />
       <Container>
         <UserProfileContainer>
           <C.Flex gap={2}>
