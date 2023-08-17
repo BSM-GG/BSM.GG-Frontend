@@ -41,7 +41,8 @@ const UserPage = () => {
                   height={4.75}
                   bgColor={T.gray[400]}
                   borderRadius={99}
-                  imgSize="70%"
+                  imgSize="80%"
+                  imgPosition="center 70%"
                   imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
                 <C.Flex direction="column" gap={0.25}>
@@ -58,7 +59,8 @@ const UserPage = () => {
                   height={4.75}
                   bgColor={T.gray[400]}
                   borderRadius={99}
-                  imgSize="70%"
+                  imgSize="80%"
+                  imgPosition="center 70%"
                   imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
                 <C.Flex direction="column" gap={0.25}>

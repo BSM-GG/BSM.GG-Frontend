@@ -2,8 +2,8 @@ import styled from "styled-components";
 import FlexBoxAttribute from "../../../types/FlexBoxAttributeProps.type";
 
 const Flex = styled.div<FlexBoxAttribute>`
-  width: max-content;
-  height: max-content;
+  width: fit-content;
+  height: fit-content;
 
   display: flex;
 
