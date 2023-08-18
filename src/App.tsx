@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Router = () => (
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route path={ROUTER.HOME} element={<LandingPage />} />
       <Route path={ROUTER.USER} element={<UserPage />} />
@@ -16,12 +17,7 @@ const Router = () => (
 );
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Router />
-    </>
-  );
+  return <Router />;
 };
 
 export default App;
