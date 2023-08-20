@@ -9,7 +9,7 @@ const Flex = styled.div<FlexBoxAttribute>`
 
   flex-direction: ${(props) => props.direction};
   justify-content: ${(props) => props.justifyContent};
-  align-items: ${(props) => props.direction};
+  align-items: ${(props) => props.alignItems};
   gap: ${(props) => props.gap}rem;
 `;
 

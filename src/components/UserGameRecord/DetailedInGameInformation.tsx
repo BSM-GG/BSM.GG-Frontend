@@ -15,7 +15,7 @@ const DetailedInGameInformation = () => {
           imgLink="assets/champion_portrait/Aatrox.webp"
           level="11"
         />
-        <Flex gap={0.1}>
+        <Flex gap={0.25}>
           <Flex direction="column" gap={0.25} alignItems="flex-end">
             <UserIcon
               width={1.7}
@@ -44,24 +44,40 @@ const DetailedInGameInformation = () => {
               imgLink="https://i.namu.wiki/i/1QegZsPLVKQJMe041Om3LmwTs9JvZn0cOhlxsbugap0zPMliwmCuBnYEHOmDc-rd6XBkF4h75wkD1akwbEHgMw.webp"
             />
           </Flex>
-          <Flex direction="column" gap={0.75}>
-            <Flex>
-              <Text type={fonts.Regular} textSize={1.15}>
-                12 /&nbsp;
-              </Text>
-              <Text type={fonts.Regular} textSize={1.15} color="red">
-                4
-              </Text>
-              <Text type={fonts.Regular} textSize={1.15}>
-                &nbsp;/ 15
-              </Text>
-            </Flex>
-            <Text type={fonts.Regular} color={T.blue[600]}>
-              6.75:1 평점
+        </Flex>
+        <Flex direction="column" gap={0.25}>
+          <Flex>
+            <Text type={fonts.Medium} textSize={1.15}>
+              12 /&nbsp;
+            </Text>
+            <Text type={fonts.Medium} textSize={1.15} color="red">
+              4
+            </Text>
+            <Text type={fonts.Medium} textSize={1.15}>
+              &nbsp;/ 15
             </Text>
           </Flex>
+          <Text type={fonts.Medium} color={T.blue[600]}>
+            6.75 평점
+          </Text>
         </Flex>
       </Flex>
+      <UsedItems>
+        {Array.from({ length: 6 }).map(() => (
+          <UserIcon
+            width={2}
+            height={2}
+            borderRadius={5}
+            imgLink="https://i.namu.wiki/i/cStlYnx6tTh49-TU175K-Lx027ag4Egwd2WBA7BueUYWREI9jfJikusFkg2jJObH0hhkgzcuE07MSpNDeWY9hA.webp"
+          ></UserIcon>
+        ))}
+        <UserIcon
+          width={2}
+          height={2}
+          borderRadius={99}
+          imgLink="https://i.namu.wiki/i/ZU992-y_DoiTppYdw14hvzxWukYh1v9L0VCyenEYt61Du2kHWAu8of6m1xjZ41A-UOywZ7o3zMYLdl6Yeu9u_w.webp"
+        ></UserIcon>
+      </UsedItems>
     </Container>
   );
 };
@@ -90,11 +106,20 @@ const ChampionIcon = styled(UserIcon)<{ level: string }>`
     justify-content: center;
     align-items: center;
     ${fonts.Regular}
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     color: white;
     border-radius: 99px;
     background-color: ${T.gray[700]};
     bottom: 0;
     right: 0;
   }
+`;
+
+const UsedItems = styled.div`
+  width: fit-content;
+  height: fit-content;
+
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0.3rem;
 `;

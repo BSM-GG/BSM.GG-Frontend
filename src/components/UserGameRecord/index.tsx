@@ -67,12 +67,12 @@ const RecordUnrollButton = styled.div`
 `;
 
 const GameInfoContainer = styled.div`
-  width: fit-content;
+  width: 100%;
   height: 100%;
 
   display: flex;
   justify-content: space-between;
 
-  padding: 1.25rem 0;
+  padding: 1.25rem 5rem 1.25rem 2rem;
   box-sizing: border-box;
 `;
