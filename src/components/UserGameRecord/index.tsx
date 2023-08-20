@@ -4,6 +4,9 @@ import { fonts } from "../../styles/font";
 import GameStatus from "./GameStatus";
 import InGameInformation from "./InGameInformation";
 import DetailedInGameInformation from "./DetailedInGameInformation";
+import { Text } from "../common";
+import { Flex } from "../common";
+import UserIcon from "../jpg/userIcon";
 
 const UserGameRecord = () => {
   return (
@@ -13,6 +16,21 @@ const UserGameRecord = () => {
         <DetailedInGameInformation />
         <InGameInformation />
       </GameInfoContainer>
+      <GamePlayerListContainer>
+        {Array.from({ length: 10 }).map(() => (
+          <Flex alignItems="center" gap={0.5}>
+            <UserIcon
+              width={1.25}
+              height={1.25}
+              imgLink="assets/champion_portrait/Aatrox.webp"
+              borderRadius={5}
+            />
+            <DisplayGamePlayerName type={fonts.Medium} textSize={0.75}>
+              주먹밥이열린나무wefwefa
+            </DisplayGamePlayerName>
+          </Flex>
+        ))}
+      </GamePlayerListContainer>
       <RecordUnrollButton>˅</RecordUnrollButton>
     </Container>
   );
@@ -75,4 +93,28 @@ const GameInfoContainer = styled.div`
 
   padding: 1.25rem 5rem 1.25rem 2rem;
   box-sizing: border-box;
+`;
+
+const GamePlayerListContainer = styled.div`
+  width: fit-content;
+  height: fit-content;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.5rem;
+
+  background-color: ${T.blue[200]};
+
+  padding: 0.5rem;
+  margin-right: 5rem;
+
+  border-radius: 5px;
+`;
+
+const DisplayGamePlayerName = styled(Text)`
+  width: 4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
