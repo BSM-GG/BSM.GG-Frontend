@@ -1,9 +1,14 @@
 import * as S from "./style";
 import SearchIcon from "../../components/svg/searchIcon700";
-import { dummy } from "../../dummy/userRank.dummy";
 import { useState } from "react";
+import TopRank from "./TopRankUser";
+import { userData_dummy } from "../../dummy/userRank.dummy";
 
 const SchoolRank = () => {
+  const filledData = userData_dummy.slice(0, 3);
+
+  console.log(filledData);
+
   const [startPage, setStartPage] = useState(1);
 
   const onClickPrevPage = () => {
@@ -30,36 +35,21 @@ const SchoolRank = () => {
             </S.SearchInputWrapper>
           </S.GameTogetherWrapper>
           <S.RankNav>
-            <S.RankNumber>#</S.RankNumber>
+            <S.UserRankNumber>#</S.UserRankNumber>
             <S.UserName>소환사</S.UserName>
-            <S.Tier>티어</S.Tier>
-            <S.Lp>LP</S.Lp>
-            <S.MostChampion>모스트챔피언</S.MostChampion>
-            <S.Level>레벨</S.Level>
-            <S.Win>승률</S.Win>
+            <S.UserTier>티어</S.UserTier>
+            <S.UserLp>LP</S.UserLp>
+            <S.UserMostChampion>모스트챔피언</S.UserMostChampion>
+            <S.UserLevel>레벨</S.UserLevel>
+            <S.UserWin>승률</S.UserWin>
           </S.RankNav>
         </S.RankingWrapper>
-        <S.UserTable>
-          {dummy.map((data, index) => (
-            <S.UserWrapper key={index}>
-              <S.RankNumber>{data.id}</S.RankNumber>
-              <S.UserName>{data.user_name}</S.UserName>
-              <S.Tier>{data.tier}</S.Tier>
-              <S.Lp>{data.lp} LP</S.Lp>
-              <S.MostChampion>
-                <S.Img src={data.most_one} alt="1" />
-                <S.Img src={data.most_two} alt="2" />
-                <S.Img src={data.most_three} alt="3" />
-              </S.MostChampion>
-              <S.Level>{data.level}</S.Level>
-              <S.Win2>{data.win} %</S.Win2>
-            </S.UserWrapper>
-          ))}
-        </S.UserTable>
+        <S.UserWrapper>
+          <TopRank filledData={[...filledData]} />
+        </S.UserWrapper>
         <S.Nav>
           <S.NumberNav>
             <S.ArrowNav onClick={onClickPrevPage}> {"<"} </S.ArrowNav>
-
             {Array(5)
               .fill(1)
               .map((el, index) => (

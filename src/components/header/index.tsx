@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <Container>
       <HeaderContainer>
-        <MainLogo></MainLogo>
+        <MainLogo />
         <MenuContainer>
           <MenuTitle>교내랭킹</MenuTitle>
           <MenuTitle>게임 같이 할사람</MenuTitle>
@@ -39,6 +39,7 @@ const Container = styled.div`
 
   padding: 2rem 2rem 2rem 2rem;
   box-sizing: border-box;
+  background-color: white;
 `;
 
 const HeaderContainer = styled.div`

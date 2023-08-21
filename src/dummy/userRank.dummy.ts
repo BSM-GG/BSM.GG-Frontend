@@ -1,4 +1,4 @@
-export const dummy = [
+export const userData_dummy = [
   {
     id: 1,
     title: "icon",

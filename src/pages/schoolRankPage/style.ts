@@ -71,8 +71,8 @@ export const RankNav = styled.div`
   color: white;
 `;
 
-export const RankNumber = styled.div`
-  width: 3rem;
+export const UserRankNumber = styled.div`
+  width: 4rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -80,14 +80,14 @@ export const RankNumber = styled.div`
 `;
 
 export const UserName = styled.div`
-  width: 15rem;
+  width: 14rem;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const Tier = styled.div`
+export const UserTier = styled.div`
   width: 20rem;
   height: 100%;
   display: flex;
@@ -95,14 +95,14 @@ export const Tier = styled.div`
   justify-content: center;
 `;
 
-export const Lp = styled.div`
+export const UserLp = styled.div`
   width: 9rem;
   height: 100%;
   display: flex;
   align-items: center;
 `;
 
-export const MostChampion = styled.div`
+export const UserMostChampion = styled.div`
   width: 16rem;
   height: 100%;
   display: flex;
@@ -111,7 +111,7 @@ export const MostChampion = styled.div`
   gap: 1.1rem;
 `;
 
-export const Level = styled.div`
+export const UserLevel = styled.div`
   width: 6.8rem;
   height: 100%;
   display: flex;
@@ -119,7 +119,7 @@ export const Level = styled.div`
   justify-content: start;
 `;
 
-export const Win = styled.div`
+export const UserWin = styled.div`
   width: 4.2rem;
   height: 2.5rem;
   display: flex;
@@ -140,25 +140,15 @@ export const UserWrapper = styled.div`
   width: 75rem;
   height: 100rem;
   margin-top: 0.5rem;
-  background-color: ${T.gray[200]};
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 `;
 
 export const Img = styled.img`
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-`;
-
-export const Win2 = styled.div`
-  width: 5rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: ${T.red[400]};
-  display: flex;
-  align-items: center;
-  justify-content: center;
 `;
 
 export const Nav = styled.div`
