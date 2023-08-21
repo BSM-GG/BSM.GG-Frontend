@@ -7,7 +7,7 @@ import UserIcon from "../jpg/userIcon";
 const DetailedInGameInformation = () => {
   return (
     <Container>
-      <Flex gap={0.5}>
+      <Flex gap={0.5} alignItems="center">
         <ChampionIcon
           width={4.5}
           height={4.5}
