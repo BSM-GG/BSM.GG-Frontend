@@ -1,16 +1,17 @@
 import styled from "styled-components";
-import * as C from "../../components/index";
 import * as T from "../../styles/theme";
-import { fonts } from "../../styles/font";
+import { Flex, Text } from "../../components/common";
 import UserIcon from "../../components/jpg/userIcon";
 import UserGameRecord from "../../components/UserGameRecord";
+import { UserChampionInfo } from "../../components";
+import { fonts } from "../../styles/font";
 
 const UserPage = () => {
   return (
     <>
       <Container>
         <UserProfileContainer>
-          <C.Flex gap={2}>
+          <Flex gap={2}>
             <UserIcon
               bgColor="none"
               imgLink="https://yt3.googleusercontent.com/ytc/AOPolaResdZdcww3BSR0bGFsCTfxsKd1__xFXwSxqQ4qRg=s900-c-k-c0x00ffffff-no-rj"
@@ -22,7 +23,7 @@ const UserPage = () => {
               </TextContainer>
               <ReloadUserRecordButton>전적 갱신</ReloadUserRecordButton>
             </UserInfoContainer>
-          </C.Flex>
+          </Flex>
           <UserIcon
             width={11}
             imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
@@ -32,7 +33,7 @@ const UserPage = () => {
         </UserProfileContainer>
         <UserRecordContainer>
           <UserRankInfoContainer>
-            <C.Flex direction="column">
+            <Flex direction="column">
               <RankgameTypeContainer>솔로랭크</RankgameTypeContainer>
               <UserRankScoreContainer>
                 <UserIcon
@@ -44,13 +45,13 @@ const UserPage = () => {
                   imgPosition="center 70%"
                   imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
-                <C.Flex direction="column" gap={0.25}>
-                  <C.Text textSize={1.5}>Challenger</C.Text>
-                  <C.Text textSize={0.75}>524LP</C.Text>
-                </C.Flex>
+                <Flex direction="column" gap={0.25}>
+                  <Text textSize={1.5}>Challenger</Text>
+                  <Text textSize={0.75}>524LP</Text>
+                </Flex>
               </UserRankScoreContainer>
-            </C.Flex>
-            <C.Flex direction="column">
+            </Flex>
+            <Flex direction="column">
               <RankgameTypeContainer>자유랭크</RankgameTypeContainer>
               <UserRankScoreContainer>
                 <UserIcon
@@ -62,31 +63,31 @@ const UserPage = () => {
                   imgPosition="center 70%"
                   imgLink="https://i.namu.wiki/i/ELjMIbhPY8bTdcaXD3XT0kHiknPMfqvATOl7zPMCESU6H4Nsit3iaKnuYpycdvq46utrS5kxpVTg383gJmWY3Q.webp"
                 />
-                <C.Flex direction="column" gap={0.25}>
-                  <C.Text textSize={1.5}>Challenger</C.Text>
-                  <C.Text textSize={0.75}>524LP</C.Text>
-                </C.Flex>
+                <Flex direction="column" gap={0.25}>
+                  <Text textSize={1.5}>Challenger</Text>
+                  <Text textSize={0.75}>524LP</Text>
+                </Flex>
               </UserRankScoreContainer>
-            </C.Flex>
+            </Flex>
             <UserChampionInfoContainer>
               {Array.from({ length: 5 }).map(() => (
-                <C.UserChampionInfo />
+                <UserChampionInfo />
               ))}
             </UserChampionInfoContainer>
           </UserRankInfoContainer>
-          <C.Flex direction="column" gap={1}>
+          <Flex direction="column" gap={1}>
             <UserRecordHeaderContainer>
-              <C.Flex gap={3.7}>
-                <C.Text type={fonts.Regular} textSize={1.1}>
+              <Flex gap={3.7}>
+                <Text type={fonts.Regular} textSize={1.1}>
                   전체
-                </C.Text>
-                <C.Text type={fonts.Regular} textSize={1.1}>
+                </Text>
+                <Text type={fonts.Regular} textSize={1.1}>
                   솔로랭크
-                </C.Text>
-                <C.Text type={fonts.Regular} textSize={1.1}>
+                </Text>
+                <Text type={fonts.Regular} textSize={1.1}>
                   자유랭크
-                </C.Text>
-              </C.Flex>
+                </Text>
+              </Flex>
               <SearchUserChampionRecordInput placeholder="챔피언 검색" />
             </UserRecordHeaderContainer>
             <UserGameRecord />
@@ -95,7 +96,7 @@ const UserPage = () => {
             <UserGameRecord />
             <UserGameRecord />
             <UserGameRecord />
-          </C.Flex>
+          </Flex>
         </UserRecordContainer>
       </Container>
     </>

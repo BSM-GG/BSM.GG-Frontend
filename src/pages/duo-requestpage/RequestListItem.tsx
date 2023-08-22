@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import * as C from "../../components";
+import { Text } from "../../components/common";
 import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
 
@@ -10,7 +10,7 @@ const RequestListItem = () => {
       <Header>
         <ProfileImage src="/images/defaultProfile.png" alt="profile" />
         <Nickname>
-          <C.Text type={fonts.Regular}>Hide on Click</C.Text>
+          <Text type={fonts.Regular}>Hide on Click</Text>
         </Nickname>
         <PeopleCount>
           <PeopleCurrentCount>3</PeopleCurrentCount>
@@ -18,30 +18,30 @@ const RequestListItem = () => {
         </PeopleCount>
       </Header>
       <Body>
-        <C.Text size={1}>같이 게임할 사람 구해요 (솔로랭크 ㄱㄱ)</C.Text>
-        <C.Text size={0.8} color={T.gray[600]} type={fonts.Regular}>
+        <Text textSize={1}>같이 게임할 사람 구해요 (솔로랭크 ㄱㄱ)</Text>
+        <Text textSize={0.8} color={T.gray[600]} type={fonts.Regular}>
           미드 or 정글 구함
-        </C.Text>
+        </Text>
       </Body>
       <Footer>
         <NicknameTextBox>
           {["나 지금 슬퍼", "React Query", "주먹밥이열린나무"].map((title) => (
-            <C.Text size={0.8} color={T.gray[600]} type={fonts.Regular}>
+            <Text textSize={0.8} color={T.gray[600]} type={fonts.Regular}>
               {title}
-            </C.Text>
+            </Text>
           ))}
         </NicknameTextBox>
         <RequestBox>
-          <C.Text size={0.8} color={T.gray[600]} type={fonts.Regular}>
+          <Text textSize={0.8} color={T.gray[600]} type={fonts.Regular}>
             ~ 2023-08-24
-          </C.Text>
-          <C.Text size={0.8} color={T.gray[600]} type={fonts.Regular}>
+          </Text>
+          <Text textSize={0.8} color={T.gray[600]} type={fonts.Regular}>
             PM 08:30
-          </C.Text>
+          </Text>
           <RequestButton>
-            <C.Text size={0.8} color={T.white} type={fonts.Bold}>
+            <Text textSize={0.8} color={T.white} type={fonts.Bold}>
               참가하기
-            </C.Text>
+            </Text>
           </RequestButton>
         </RequestBox>
       </Footer>

@@ -1,12 +1,13 @@
 import { Header } from "./components";
 import { ROUTER } from "./constants/router.constant";
 import DuoRequestPage from "./pages/duo-requestpage";
-import LandingPage from "./pages/landingpage";
-import UserPage from "./pages/userpage";
+import LandingPage from "./pages/LandingPage";
+import UserPage from "./pages/UserPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Router = () => (
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route path={ROUTER.HOME} element={<LandingPage />} />
       <Route path={ROUTER.USER} element={<UserPage />} />
@@ -14,5 +15,9 @@ const Router = () => (
     </Routes>
   </BrowserRouter>
 );
+
+const App = () => {
+  return <Router />;
+};
 
 export default App;

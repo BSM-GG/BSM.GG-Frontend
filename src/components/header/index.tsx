@@ -4,14 +4,23 @@ import MainLogo from "../svg/mainLogo";
 import { fonts } from "../../styles/font";
 import * as T from "../../styles/theme";
 
+import { ROUTER } from "../../constants/router.constant";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   return (
     <Container>
       <HeaderContainer>
-        <MainLogo></MainLogo>
+        <Link to={ROUTER.HOME}>
+          <MainLogo />
+        </Link>
         <MenuContainer>
-          <MenuTitle>교내랭킹</MenuTitle>
-          <MenuTitle>게임 같이 할사람</MenuTitle>
+          <Link to="/">
+            <MenuTitle>교내랭킹</MenuTitle>
+          </Link>
+          <Link to={ROUTER.DUO_REQUEST}>
+            <MenuTitle>게임 같이 할사람</MenuTitle>
+          </Link>
           <MenuTitle>이달의 롤창</MenuTitle>
         </MenuContainer>
       </HeaderContainer>
