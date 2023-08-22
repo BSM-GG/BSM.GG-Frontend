@@ -7,7 +7,7 @@ import Rank from "./RankUser";
 
 const SchoolRank = () => {
   const TopRankData = userData_dummy.slice(0, 3);
-  const RankData = userData_dummy.slice(4, 11);
+  const RankData = userData_dummy.slice(3, 10);
 
   console.log(TopRankData);
 
@@ -60,7 +60,7 @@ const SchoolRank = () => {
                   id={String(index + startPage)}
                   key={index + startPage}
                   onClick={() => {
-                    console.log(index + startPage);
+                    console.log(index + startPage); // refetch
                   }}
                 >
                   {index + startPage}
