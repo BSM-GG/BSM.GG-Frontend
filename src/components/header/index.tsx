@@ -40,6 +40,7 @@ const Container = styled.div`
   padding: 2rem 2rem 2rem 2rem;
   box-sizing: border-box;
   background-color: white;
+  z-index: 3;
 `;
 
 const HeaderContainer = styled.div`

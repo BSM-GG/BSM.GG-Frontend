@@ -3,8 +3,7 @@ import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
 
 export const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,7 +71,7 @@ export const RankNav = styled.div`
 `;
 
 export const UserRankNumber = styled.div`
-  width: 4rem;
+  width: 5rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -80,15 +79,14 @@ export const UserRankNumber = styled.div`
 `;
 
 export const UserName = styled.div`
-  width: 14rem;
-  height: 100%;
+  width: 26rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-left: 1.5rem;
 `;
 
 export const UserTier = styled.div`
-  width: 20rem;
+  width: 4rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -100,6 +98,7 @@ export const UserLp = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 export const UserMostChampion = styled.div`
@@ -138,7 +137,6 @@ export const UserTable = styled.div`
 
 export const UserWrapper = styled.div`
   width: 75rem;
-  height: 100rem;
   margin-top: 0.5rem;
   display: flex;
   flex-direction: column;
@@ -156,7 +154,8 @@ export const Nav = styled.div`
   justify-content: center;
   margin-top: 30px;
   width: 98%;
-  height: 65px;
+  height: 3rem;
+  margin-top: 3rem;
   font-size: 1.2rem;
 `;
 

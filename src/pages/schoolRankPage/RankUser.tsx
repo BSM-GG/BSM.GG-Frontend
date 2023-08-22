@@ -3,9 +3,6 @@ import styled from "styled-components";
 import { Flex } from "../../components/common";
 import { fonts } from "../../styles/font";
 import * as T from "../../styles/theme";
-import Challenger from "../../components/svg/image 153.svg";
-import GrandMaster from "../../components/svg/Grandmaster.svg";
-import Master from "../../components/svg/Master.svg";
 
 export interface UserData {
   id: number;
@@ -21,26 +18,20 @@ export interface UserData {
   win: number;
 }
 
-interface TopRankProps {
+interface RankProps {
   filledData: UserData[];
 }
 
-const TopRank: React.FC<TopRankProps> = ({ filledData }) => {
+const RankUser: React.FC<RankProps> = ({ filledData }) => {
   console.log(filledData);
   return (
     <>
       {filledData.map((data) => (
         <UserInformationWrapper key={data.id} userId={data.id}>
           <Flex>
+            <UserRankNumber>{data.id}</UserRankNumber>
             <UserProfileInfo>
               <UserProfileImg src={data.profile_icon} alt="" />
-              {data.id === 1 ? (
-                <UserChallengerMasterTier src={Challenger} alt="" />
-              ) : data.id === 2 ? (
-                <UserGrandMasterTier src={GrandMaster} alt="" />
-              ) : (
-                <UserMasterTier src={Master} alt="" />
-              )}
             </UserProfileInfo>
             <UserNameWrapper>
               <UserNickName>
@@ -64,25 +55,24 @@ const TopRank: React.FC<TopRankProps> = ({ filledData }) => {
   );
 };
 
-export default TopRank;
+export default RankUser;
 
 const UserInformationWrapper = styled.div<{ userId: number }>`
   width: 100%;
   height: 5rem;
   background-color: white;
   border-radius: 0.3rem;
-  border: ${({ userId }) =>
-    userId === 1
-      ? `1px solid ${T.blue[800]}`
-      : userId === 2
-      ? `1px solid ${T.red[800]}`
-      : `1px solid ${T.pink[100]}`};
-  box-shadow: ${({ userId }) =>
-    userId === 1
-      ? "rgba(43, 160, 255, 0.5) 0px 2px 4px 1px"
-      : userId === 2
-      ? "rgba(255, 16, 16, 0.5) 0px 2px 4px 1px"
-      : "rgba(251, 30, 255, 0.5) 0px 2px 4px 1px"};
+  background-color: ${T.gray[100]};
+  display: flex;
+`;
+
+const UserRankNumber = styled.div`
+  width: 3rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  ${fonts.Medium};
 `;
 
 const UserProfileImg = styled.img`
@@ -94,9 +84,9 @@ const UserProfileImg = styled.img`
 const UserProfileInfo = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 5rem;
+  width: 4rem;
   height: 5rem;
+  margin-left: 0.5rem;
 `;
 
 export const UserMasterTier = styled.img`
@@ -121,7 +111,7 @@ export const UserChallengerMasterTier = styled.img`
 `;
 
 export const UserNameWrapper = styled.div`
-  width: 28.5rem;
+  width: 26rem;
   height: 5rem;
   display: flex;
   align-items: center;
@@ -129,7 +119,6 @@ export const UserNameWrapper = styled.div`
 `;
 
 export const UserNickName = styled.div`
-  margin-left: 1.25rem;
   ${fonts.Bold}
   font-size: 1rem;
 `;

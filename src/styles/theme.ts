@@ -25,6 +25,11 @@ export const red = {
   "300": "#FF3232",
   "400": "#FF2121",
   "700": "#FF0000",
+  "800": "#FF3939",
+};
+
+export const pink = {
+  "100": "#DB4BDF",
 };
 
 export const white = "#FFFFFF";

@@ -3,11 +3,13 @@ import SearchIcon from "../../components/svg/searchIcon700";
 import { useState } from "react";
 import TopRank from "./TopRankUser";
 import { userData_dummy } from "../../dummy/userRank.dummy";
+import Rank from "./RankUser";
 
 const SchoolRank = () => {
-  const filledData = userData_dummy.slice(0, 3);
+  const TopRankData = userData_dummy.slice(0, 3);
+  const RankData = userData_dummy.slice(4, 11);
 
-  console.log(filledData);
+  console.log(TopRankData);
 
   const [startPage, setStartPage] = useState(1);
 
@@ -45,7 +47,8 @@ const SchoolRank = () => {
           </S.RankNav>
         </S.RankingWrapper>
         <S.UserWrapper>
-          <TopRank filledData={[...filledData]} />
+          <TopRank filledData={[...TopRankData]} />
+          <Rank filledData={[...RankData]} />
         </S.UserWrapper>
         <S.Nav>
           <S.NumberNav>
