@@ -1,5 +1,5 @@
 import * as S from "./style";
-import SearchIcon from "../../components/svg/searchIcon700";
+import SearchIcon from "../../components/svg/SearchIcon";
 import { dummy } from "../../dummy/userRank.dummy";
 import { useState } from "react";
 

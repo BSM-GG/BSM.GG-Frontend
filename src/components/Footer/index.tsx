@@ -1,5 +1,5 @@
 import * as S from "./style";
-import BSMLogo from "../svg/mainLogo";
+import BSMLogo from "../svg/MainLogo";
 
 const Footer = () => {
   return (
