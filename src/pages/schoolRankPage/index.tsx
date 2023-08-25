@@ -1,27 +1,28 @@
 import * as S from "./style";
 import SearchIcon from "../../components/svg/searchIcon700";
-import { useState } from "react";
 import TopRank from "./TopRankUser";
 import { userData_dummy } from "../../dummy/userRank.dummy";
 import Rank from "./RankUser";
+import React, { useState } from "react";
+import ReactPaginate from "react-paginate";
+import { styled } from "styled-components";
 
 const SchoolRank = () => {
-  const TopRankData = userData_dummy.slice(0, 3);
-  const RankData = userData_dummy.slice(3, 10);
+  const [users, setUsers] = useState(userData_dummy.slice(0, 30));
+  const [pageNumber, setPageNumber] = useState(0);
 
-  console.log(TopRankData);
+  const userPage = 10;
+  const pageVisited = pageNumber * userPage;
 
-  const [startPage, setStartPage] = useState(1);
+  const pageCount = Math.ceil(users.length / userPage);
 
-  const onClickPrevPage = () => {
-    if (startPage < 5) return;
-    setStartPage((prev) => prev - 5);
+  const changePage = ({ selected }: { selected: number }) => {
+    setPageNumber(selected);
   };
 
-  const onClickNextPage = () => {
-    if (startPage + 5 > 100) return;
-    setStartPage((prev) => prev + 5);
-  };
+  const displayUsers = users
+    .slice(pageVisited, pageVisited + userPage)
+    .map((user) => <Rank user={[user]} />);
 
   return (
     <S.Wrapper>
@@ -47,28 +48,16 @@ const SchoolRank = () => {
           </S.RankNav>
         </S.RankingWrapper>
         <S.UserWrapper>
-          <TopRank filledData={[...TopRankData]} />
-          <Rank filledData={[...RankData]} />
+          {/* <TopRank filledData={[...TopRankData]} /> */}
+          {displayUsers}
         </S.UserWrapper>
         <S.Nav>
-          <S.NumberNav>
-            <S.ArrowNav onClick={onClickPrevPage}> {"<"} </S.ArrowNav>
-            {Array(5)
-              .fill(1)
-              .map((el, index) => (
-                <S.Number
-                  id={String(index + startPage)}
-                  key={index + startPage}
-                  onClick={() => {
-                    console.log(index + startPage); // refetch
-                  }}
-                >
-                  {index + startPage}
-                </S.Number>
-              ))}
-
-            <S.ArrowNav onClick={onClickNextPage}> {">"} </S.ArrowNav>
-          </S.NumberNav>
+          <StyledPagination
+            previousLabel={"<"}
+            nextLabel={">"}
+            pageCount={pageCount}
+            onPageChange={changePage}
+          />
         </S.Nav>
       </S.CenterWrapper>
     </S.Wrapper>
@@ -76,3 +65,9 @@ const SchoolRank = () => {
 };
 
 export default SchoolRank;
+
+const StyledPagination = styled(ReactPaginate)`
+  display: flex;
+  gap: 2rem;
+  cursor: pointer;
+`;

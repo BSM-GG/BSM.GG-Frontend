@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
 
 * {
   margin: 0;
+  list-style: none;
 }
 
 #root {

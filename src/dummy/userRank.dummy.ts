@@ -201,4 +201,184 @@ export const userData_dummy = [
     level: 101,
     win: 50,
   },
+  {
+    id: 12,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 13,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 14,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 15,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 16,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 17,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 18,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 19,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 20,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
+  {
+    id: 21,
+    title: "icon",
+    user_name: "샤코대장 노영진",
+    name: "이상혁",
+    profile_icon:
+      "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
+    tier: "Gold 2",
+    lp: 82,
+    most_one:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Shaco.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_two:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Rammus.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    most_three:
+      "https://opgg-static.akamaized.net/meta/images/lol/champion/Poppy.png?image=c_crop,h_103,w_103,x_9,y_9/q_auto,f_webp,w_64&v=1691054379232",
+    level: 101,
+    win: 50,
+  },
 ];

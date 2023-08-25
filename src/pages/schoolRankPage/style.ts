@@ -169,11 +169,6 @@ export const ArrowNav = styled.div`
   padding: 0 2rem 0 2rem;
 `;
 
-export const NumberNav = styled.div`
-  display: flex;
-  gap: 4rem;
-`;
-
 export const Number = styled.div`
   cursor: pointer;
   &:active {
