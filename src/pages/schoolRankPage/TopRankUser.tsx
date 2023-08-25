@@ -22,14 +22,14 @@ export interface UserData {
 }
 
 interface TopRankProps {
-  filledData: UserData[];
+  user: UserData[];
 }
 
-const TopRank: React.FC<TopRankProps> = ({ filledData }) => {
-  console.log(filledData);
+const TopRank: React.FC<TopRankProps> = ({ user }) => {
+  console.log(user);
   return (
     <>
-      {filledData.map((data) => (
+      {user.map((data) => (
         <UserInformationWrapper key={data.id} userId={data.id}>
           <Flex>
             <UserProfileInfo>

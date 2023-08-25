@@ -22,7 +22,9 @@ const SchoolRank = () => {
 
   const displayUsers = users
     .slice(pageVisited, pageVisited + userPage)
-    .map((user) => <Rank user={[user]} />);
+    .map((user) => (
+      <>{user.id <= 3 ? <TopRank user={[user]} /> : <Rank user={[user]} />}</>
+    ));
 
   return (
     <S.Wrapper>
@@ -47,10 +49,7 @@ const SchoolRank = () => {
             <S.UserWin>승률</S.UserWin>
           </S.RankNav>
         </S.RankingWrapper>
-        <S.UserWrapper>
-          {/* <TopRank filledData={[...TopRankData]} /> */}
-          {displayUsers}
-        </S.UserWrapper>
+        <S.UserWrapper>{displayUsers}</S.UserWrapper>
         <S.Nav>
           <StyledPagination
             previousLabel={"<"}
