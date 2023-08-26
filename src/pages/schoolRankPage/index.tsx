@@ -8,7 +8,6 @@ import ReactPaginate from "react-paginate";
 import { styled } from "styled-components";
 import { Text } from "../../components/common";
 import { fonts } from "../../styles/font";
-import * as T from "../../styles/theme";
 
 const SchoolRank = () => {
   const [users, setUsers] = useState(userData_dummy.slice(0, 30));
@@ -17,6 +16,10 @@ const SchoolRank = () => {
 
   const userPage = 10;
   const pageVisited = pageNumber * userPage;
+
+  const getValue = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setUserInput(e.target.value.toLowerCase());
+  };
 
   const filteredUsers = users.filter((user) =>
     user.user_name.toLowerCase().includes(userInput)
@@ -48,10 +51,6 @@ const SchoolRank = () => {
           </div>
         ))
     );
-
-  const getValue = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setUserInput(e.target.value.toLowerCase());
-  };
 
   return (
     <S.Wrapper>
