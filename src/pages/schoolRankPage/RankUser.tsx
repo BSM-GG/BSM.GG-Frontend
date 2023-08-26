@@ -16,6 +16,7 @@ export interface UserData {
   most_three: string;
   level: number;
   win: number;
+  name: string;
 }
 
 interface RankProps {
@@ -36,7 +37,7 @@ const RankUser: React.FC<RankProps> = ({ user }) => {
             <UserNameWrapper>
               <UserNickName>
                 <Flex direction="column">{data.user_name}</Flex>
-                <UserName>{data.user_name}</UserName>
+                <UserName>{data.name}</UserName>
               </UserNickName>
             </UserNameWrapper>
             <UserTier>{data.tier}</UserTier>
