@@ -21,7 +21,7 @@ export const userData_dummy = [
     id: 2,
     title: "icon",
     user_name: "노영진",
-    name: "이상협",
+    name: "노영진",
     profile_icon:
       "https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon7.jpg?image=q_auto,f_webp,w_64&v=1691054379232",
     tier: "Gold 2",
