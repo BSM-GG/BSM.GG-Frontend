@@ -4,19 +4,26 @@ import { fonts } from "../../styles/font";
 import { Text } from "../../components/common";
 import PlayerInfo from "./PlayerInfo";
 import UserProfile from "./UserProfile";
+import OneSentence from "./OneSentence";
 
 const MostPlayer = () => {
   return (
     <Container>
       <MostPlayerWrapper>
         <MostPlayerTitle>
-          <Text textSize={1.8} color={T.blue[700]} type={fonts.Bold}>
-            이달의 롤창
-          </Text>
+          <MainTitle>
+            <Text textSize={1.8} color={T.blue[700]} type={fonts.Bold}>
+              이달의 롤창
+            </Text>
+          </MainTitle>
+          <SubTitle>
+            <Text type={fonts.Regular}>이 유저는 지난 한 달동안..</Text>
+          </SubTitle>
         </MostPlayerTitle>
         <UserInfoWrapper>
           <UserProfileWrapper>
             <UserProfile />
+            <OneSentence />
           </UserProfileWrapper>
           <UserGameInfoWrapper>
             <PlayerInfo
@@ -71,11 +78,23 @@ const MostPlayerWrapper = styled.div`
 
 const MostPlayerTitle = styled.div`
   width: 80rem;
-  height: 8rem;
+  height: 11rem;
+  display: flex;
+  justify-content: space-between;
+`;
+
+const MainTitle = styled.div`
+  width: 40rem;
+  height: 11rem;
+  display: flex;
+  align-items: center;
+`;
+
+const SubTitle = styled.div`
+  width: 35.5rem;
+  height: 11rem;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
-  margin-bottom: 1rem;
 `;
 
 const UserInfoWrapper = styled.div`
