@@ -4,6 +4,7 @@ import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
 import { Text } from "../../components/common";
 import UserIcon from "../../components/jpg/userIcon";
+import PlayerInfo from "./PlayerInfo";
 
 const MostPlayer = () => {
   const calculateRatio = (win: number, lose: number) => {
@@ -51,86 +52,34 @@ const MostPlayer = () => {
             </OddsGraph>
           </UserProfileWrapper>
           <UserGameInfoWrapper>
-            <UserGameInfoKill>
-              <UserTotalNum>
-                <Text color={"white"} textSize={1} type={fonts.Regular}>
-                  총
-                </Text>
-              </UserTotalNum>
-              <UserTotalKillNum>
-                <Text color={"white"} textSize={3} type={fonts.Regular}>
-                  1250
-                </Text>
-                <Text color={"white"} textSize={1} type={fonts.Regular}>
-                  번
-                </Text>
-              </UserTotalKillNum>
-              <UserTotalText>
-                <Text color={"white"} textSize={1} type={fonts.Regular}>
-                  죽었습니다
-                </Text>
-              </UserTotalText>
-            </UserGameInfoKill>
-            <UserGameInfoDead>
-              <UserTotalNum>
-                <Text color={"white"} textSize={1} type={fonts.Regular}>
-                  총
-                </Text>
-              </UserTotalNum>
-              <UserTotalKillNum>
-                <Text color={"white"} textSize={3} type={fonts.Regular}>
-                  1250
-                </Text>
-                <Text color={"white"} textSize={1} type={fonts.Regular}>
-                  번
-                </Text>
-              </UserTotalKillNum>
-              <UserTotalText>
-                <Text color={"white"} textSize={1} type={fonts.Regular}>
-                  킬을 했습니다
-                </Text>
-              </UserTotalText>
-            </UserGameInfoDead>
-            <UserGameInfo>
-              <UserTotalNum>
-                <Text textSize={1} type={fonts.Regular}>
-                  평균
-                </Text>
-              </UserTotalNum>
-              <UserTotalKillNum>
-                <Text textSize={3} type={fonts.Regular}>
-                  1250
-                </Text>
-                <Text textSize={1} type={fonts.Regular}>
-                  분
-                </Text>
-              </UserTotalKillNum>
-              <UserTotalText>
-                <Text textSize={1} type={fonts.Regular}>
-                  게임했습니다
-                </Text>
-              </UserTotalText>
-            </UserGameInfo>
-            <UserGameInfo>
-              <UserTotalNum>
-                <Text textSize={1} type={fonts.Regular}>
-                  총
-                </Text>
-              </UserTotalNum>
-              <UserTotalKillNum>
-                <Text textSize={3} type={fonts.Regular}>
-                  1250
-                </Text>
-                <Text textSize={1} type={fonts.Regular}>
-                  lp
-                </Text>
-              </UserTotalKillNum>
-              <UserTotalText>
-                <Text textSize={1} type={fonts.Regular}>
-                  올랐습니다
-                </Text>
-              </UserTotalText>
-            </UserGameInfo>
+            <PlayerInfo
+              playerPoint={1250}
+              playerFirseText={"번"}
+              playerLastText={"죽었습니다"}
+              textColor={"white"}
+              backGroundColor={T.blue[700]}
+            />
+            <PlayerInfo
+              playerPoint={1250}
+              playerFirseText={"번"}
+              playerLastText={"킬을 했습니다"}
+              textColor={"white"}
+              backGroundColor={T.red[300]}
+            />
+            <PlayerInfo
+              playerPoint={1250}
+              playerFirseText={"분"}
+              playerLastText={"게임했습니다"}
+              textColor={"black"}
+              backGroundColor={T.gray[200]}
+            />
+            <PlayerInfo
+              playerPoint={1250}
+              playerFirseText={"lp"}
+              playerLastText={"올렸습니다"}
+              textColor={"black"}
+              backGroundColor={T.gray[200]}
+            />
           </UserGameInfoWrapper>
         </UserInfoWrapper>
       </MostPlayerWrapper>
@@ -249,47 +198,4 @@ const LoseBar = styled.div<{ loseRatio: number }>`
   justify-content: flex-end;
   padding-right: 0.5rem;
   color: white;
-`;
-
-const CommonUserGameInfo = styled.div`
-  width: 15rem;
-  height: 10rem;
-  border-radius: 0.5rem;
-`;
-
-export const UserGameInfo = styled(CommonUserGameInfo)`
-  background-color: ${T.gray[200]};
-  padding: 1rem;
-`;
-
-export const UserGameInfoDead = styled(CommonUserGameInfo)`
-  background-color: ${T.red[300]};
-  padding: 1rem;
-`;
-
-export const UserGameInfoKill = styled(CommonUserGameInfo)`
-  background-color: ${T.blue[700]};
-  padding: 1rem;
-`;
-
-export const UserTotalNum = styled.div`
-  width: 100%;
-  height: 2rem;
-`;
-
-export const UserTotalKillNum = styled.div`
-  width: 100%;
-  height: 6.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-`;
-
-export const UserTotalText = styled.div`
-  width: 100%;
-  height: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
 `;
