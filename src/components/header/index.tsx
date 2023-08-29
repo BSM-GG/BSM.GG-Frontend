@@ -11,14 +11,17 @@ const Header = () => {
   return (
     <Container>
       <HeaderContainer>
+        <MainLogo />
         <MenuContainer>
-          <Link to="/">
+          <Link to={ROUTER.SCHOOL_RANK}>
             <MenuTitle>교내랭킹</MenuTitle>
           </Link>
           <Link to={ROUTER.DUO_REQUEST}>
             <MenuTitle>게임 같이 할사람</MenuTitle>
           </Link>
-          <MenuTitle>이달의 롤창</MenuTitle>
+          <Link to={ROUTER.LOL_CAHNG}>
+            <MenuTitle>이달의 롤창</MenuTitle>
+          </Link>
         </MenuContainer>
       </HeaderContainer>
       <MenuContainer>
