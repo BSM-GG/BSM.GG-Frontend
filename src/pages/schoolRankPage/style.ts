@@ -3,8 +3,7 @@ import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
 
 export const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  width: max-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,8 +70,8 @@ export const RankNav = styled.div`
   color: white;
 `;
 
-export const RankNumber = styled.div`
-  width: 3rem;
+export const UserRankNumber = styled.div`
+  width: 5rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -80,29 +79,29 @@ export const RankNumber = styled.div`
 `;
 
 export const UserName = styled.div`
-  width: 15rem;
+  width: 26rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+`;
+
+export const UserTier = styled.div`
+  width: 4rem;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const Tier = styled.div`
-  width: 20rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
-export const Lp = styled.div`
+export const UserLp = styled.div`
   width: 9rem;
   height: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
-export const MostChampion = styled.div`
+export const UserMostChampion = styled.div`
   width: 16rem;
   height: 100%;
   display: flex;
@@ -111,7 +110,7 @@ export const MostChampion = styled.div`
   gap: 1.1rem;
 `;
 
-export const Level = styled.div`
+export const UserLevel = styled.div`
   width: 6.8rem;
   height: 100%;
   display: flex;
@@ -119,7 +118,7 @@ export const Level = styled.div`
   justify-content: start;
 `;
 
-export const Win = styled.div`
+export const UserWin = styled.div`
   width: 4.2rem;
   height: 2.5rem;
   display: flex;
@@ -138,10 +137,10 @@ export const UserTable = styled.div`
 
 export const UserWrapper = styled.div`
   width: 75rem;
-  height: 100rem;
   margin-top: 0.5rem;
-  background-color: ${T.gray[200]};
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 `;
 
 export const Img = styled.img`
@@ -150,23 +149,13 @@ export const Img = styled.img`
   border-radius: 50%;
 `;
 
-export const Win2 = styled.div`
-  width: 5rem;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  color: ${T.red[400]};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 export const Nav = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 30px;
   width: 98%;
-  height: 65px;
+  height: 3rem;
+  margin-top: 3rem;
   font-size: 1.2rem;
 `;
 
@@ -178,11 +167,6 @@ export const ArrowNav = styled.div`
     transition: 0.3s ease-in-out;
   }
   padding: 0 2rem 0 2rem;
-`;
-
-export const NumberNav = styled.div`
-  display: flex;
-  gap: 4rem;
 `;
 
 export const Number = styled.div`

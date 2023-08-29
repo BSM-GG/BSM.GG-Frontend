@@ -6,6 +6,7 @@ export const blue = {
   "500": "#68A3FF",
   "600": "#3685FF",
   "700": "#0064FF",
+  "800": "#25B1FF",
 };
 
 export const gray = {
@@ -24,6 +25,11 @@ export const red = {
   "300": "#FF3232",
   "400": "#FF2121",
   "700": "#FF0000",
+  "800": "#FF3939",
+};
+
+export const pink = {
+  "100": "#DB4BDF",
 };
 
 export const white = "#FFFFFF";

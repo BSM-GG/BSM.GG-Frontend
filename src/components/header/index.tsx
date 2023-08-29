@@ -11,9 +11,6 @@ const Header = () => {
   return (
     <Container>
       <HeaderContainer>
-        <Link to={ROUTER.HOME}>
-          <MainLogo />
-        </Link>
         <MenuContainer>
           <Link to="/">
             <MenuTitle>교내랭킹</MenuTitle>
@@ -48,6 +45,8 @@ const Container = styled.div`
 
   padding: 2rem 2rem 2rem 2rem;
   box-sizing: border-box;
+  background-color: white;
+  z-index: 3;
 `;
 
 const HeaderContainer = styled.div`

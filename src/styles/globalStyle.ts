@@ -43,6 +43,7 @@ body {
 
 * {
   margin: 0;
+  list-style: none;
 }
 
 a {

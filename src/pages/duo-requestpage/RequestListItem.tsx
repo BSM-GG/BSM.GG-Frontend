@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "styled-components";
-import { Text } from "../../components/common";
+import { Text, Flex } from "../../components/common";
 import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
 
