@@ -3,7 +3,7 @@ import * as T from "../../styles/theme";
 import { Flex, Text } from "../common";
 import { fonts } from "../../styles/font";
 
-const InGameInformation = () => {
+const GameDetail = () => {
   return (
     <Container>
       <Flex gap={0.3} direction="column">
@@ -24,7 +24,7 @@ const InGameInformation = () => {
   );
 };
 
-export default InGameInformation;
+export default GameDetail;
 
 const Container = styled.div`
   width: fit-content;

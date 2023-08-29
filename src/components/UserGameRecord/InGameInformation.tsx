@@ -4,7 +4,7 @@ import { Flex, Text } from "../common";
 import { fonts } from "../../styles/font";
 import UserIcon from "../jpg/userIcon";
 
-const DetailedInGameInformation = () => {
+const InGameInformation = () => {
   return (
     <Container>
       <Flex gap={0.5} alignItems="center">
@@ -21,13 +21,13 @@ const DetailedInGameInformation = () => {
               width={1.7}
               height={1.7}
               borderRadius={5}
-              imgLink="https://i.namu.wiki/i/Jp0erj9KNWJoLm0XJAtbje-is_eG9L3zrisu75CJJnwl3vvyo_uPNe_dtO9CWmKYmsoLa8qDSbjRbtdqyATiqw.webp"
+              imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
             />
             <UserIcon
               width={1.7}
               height={1.7}
               borderRadius={5}
-              imgLink="https://i.namu.wiki/i/nrCKZrvop6MBRIXq8sbhYx_LlUYGrNFcg1bnWKcJoHzqXnhk3vOXTcI25i-LDu8CItZeIuqGE-bsET4wPVC4jw.webp"
+              imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
             />
           </Flex>
           <Flex direction="column" gap={0.25}>
@@ -35,13 +35,15 @@ const DetailedInGameInformation = () => {
               width={1.7}
               height={1.7}
               imgSize="110%"
+              borderRadius={5}
               imgLink="https://i.namu.wiki/i/fCEPJxFsbeApqrKcOytGSfHscsihhok9e7Dk_-I628_I0vdWaFyWOMEqor_2BGm1DgJPg8zHfrcbu31FBMPj3A.webp"
             />
             <UserIcon
               width={1.7}
               height={1.7}
               imgSize="80%"
-              imgLink="https://i.namu.wiki/i/1QegZsPLVKQJMe041Om3LmwTs9JvZn0cOhlxsbugap0zPMliwmCuBnYEHOmDc-rd6XBkF4h75wkD1akwbEHgMw.webp"
+              borderRadius={5}
+              imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
             />
           </Flex>
         </Flex>
@@ -68,21 +70,21 @@ const DetailedInGameInformation = () => {
             width={2}
             height={2}
             borderRadius={5}
-            imgLink="https://i.namu.wiki/i/cStlYnx6tTh49-TU175K-Lx027ag4Egwd2WBA7BueUYWREI9jfJikusFkg2jJObH0hhkgzcuE07MSpNDeWY9hA.webp"
+            imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
           ></UserIcon>
         ))}
         <UserIcon
           width={2}
           height={2}
           borderRadius={99}
-          imgLink="https://i.namu.wiki/i/ZU992-y_DoiTppYdw14hvzxWukYh1v9L0VCyenEYt61Du2kHWAu8of6m1xjZ41A-UOywZ7o3zMYLdl6Yeu9u_w.webp"
+          imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
         ></UserIcon>
       </UsedItems>
     </Container>
   );
 };
 
-export default DetailedInGameInformation;
+export default InGameInformation;
 
 const Container = styled.div`
   width: fit-content;

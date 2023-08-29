@@ -1,20 +1,25 @@
 import { styled } from "styled-components";
 import * as T from "../../styles/theme";
 import { fonts } from "../../styles/font";
-import GameStatus from "./GameStatus";
-import InGameInformation from "./InGameInformation1";
-import DetailedInGameInformation from "./InGameInformation2";
-import { Text } from "../common";
-import { Flex } from "../common";
 import UserIcon from "../jpg/userIcon";
+import GameStatus from "./GameStatus";
+import GameDetail from "./GameDetail";
+import InGameInformation from "./InGameInformation";
+import DetailedGameInformation from "./DetailedGameInformation";
+import Arrow from "../svg/Arrow";
+import { Flex, Text } from "../common";
+
+import { useState } from "react";
 
 const UserGameRecord = () => {
+  const [show, setShow] = useState(false);
+
   return (
-    <Container>
+    <Container show={show}>
       <GameInfoContainer>
         <GameStatus />
-        <DetailedInGameInformation />
         <InGameInformation />
+        <GameDetail />
       </GameInfoContainer>
       <GamePlayerListContainer>
         {Array.from({ length: 10 }).map(() => (
@@ -31,14 +36,21 @@ const UserGameRecord = () => {
           </Flex>
         ))}
       </GamePlayerListContainer>
-      <RecordUnrollButton>˅</RecordUnrollButton>
+      <RecordUnrollButton
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        <Arrow direction={show ? 180 : 0} />
+      </RecordUnrollButton>
+      <DetailedGameInformation show={show} />
     </Container>
   );
 };
 
 export default UserGameRecord;
 
-const Container = styled.div`
+const Container = styled.div<{ show: boolean }>`
   width: 59rem;
   height: 11rem;
 
@@ -49,6 +61,7 @@ const Container = styled.div`
   align-items: center;
 
   background-color: ${T.blue[300]};
+  margin-bottom: ${(props) => (props.show ? "33rem" : 0)};
 
   border-radius: 8px;
 `;
@@ -69,6 +82,9 @@ const RecordUnrollButton = styled.div`
   align-items: flex-end;
   justify-content: center;
 
+  padding-bottom: 1.25rem;
+  box-sizing: border-box;
+
   cursor: pointer;
 
   background-color: ${T.blue[700]};
@@ -77,10 +93,13 @@ const RecordUnrollButton = styled.div`
 
   &:hover {
     background-color: ${T.blue[500]};
+    padding-bottom: 1rem;
   }
 
   &:active {
     background-color: ${T.blue[300]};
+    padding-bottom: 1.25rem;
+    transition: 0.05s cubic-bezier(0.175, 0.885, 0.32, 1);
   }
 `;
 

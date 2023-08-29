@@ -1,4 +1,9 @@
 import * as S from "./style";
+<<<<<<< HEAD
+import SearchIcon from "../../components/svg/SearchIcon";
+import { dummy } from "../../dummy/userRank.dummy";
+import { useState } from "react";
+=======
 import SearchIcon from "../../components/svg/searchIcon700";
 import TopRank from "./TopRankUser";
 import { userData_dummy } from "../../dummy/userRank.dummy";
@@ -8,6 +13,7 @@ import ReactPaginate from "react-paginate";
 import { styled } from "styled-components";
 import { Text } from "../../components/common";
 import { fonts } from "../../styles/font";
+>>>>>>> 1f4d727f04054bf50329cd634ebb00ce8d8face4
 
 const SchoolRank = () => {
   const [users, setUsers] = useState(userData_dummy.slice(0, 30));
