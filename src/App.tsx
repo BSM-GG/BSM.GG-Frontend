@@ -9,6 +9,7 @@ import MostPlayer from "./pages/most-player";
 
 const Router = () => (
   <BrowserRouter>
+    <Header />
     <Routes>
       <Route path={ROUTER.HOME} element={<LandingPage />} />
       <Route path={ROUTER.USER} element={<UserPage />} />
@@ -20,12 +21,7 @@ const Router = () => (
 );
 
 const App = () => {
-  return (
-    <>
-      <Header />
-      <Router />
-    </>
-  );
+  return <Router />;
 };
 
 export default App;

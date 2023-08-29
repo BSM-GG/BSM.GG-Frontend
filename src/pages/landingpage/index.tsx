@@ -8,13 +8,12 @@ const LandingPage = () => {
   return (
     <>
       <Container>
-        <MainLogo width={24.588} height={7.438}></MainLogo>
+        <MainLogo width={24.5} height={7.5} />
         <InputContainer>
-          <InputSideButton position="left" />
           <NameInput placeholder="소환사 이름을 입력하세요!" />
-          <InputSideButton position="right">
+          <SearchButton>
             <SearchIcon />
-          </InputSideButton>
+          </SearchButton>
         </InputContainer>
       </Container>
     </>
@@ -40,40 +39,19 @@ const InputContainer = styled.div`
   width: max-content;
   height: max-content;
   display: flex;
-`;
 
-const InputSideButton = styled.button<{ position: string }>`
-  width: 4rem;
-  height: 4rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background-color: white;
-
-  border: 3px solid ${T.blue[600]};
-
-  ${(props) =>
-    props.position === "left"
-      ? "border-top-left-radius: 9.25rem; border-bottom-left-radius: 9.25rem;"
-      : "border-top-right-radius: 9.25rem; border-bottom-right-radius: 9.25rem;"}
-
-  ${(props) =>
-    props.position === "left"
-      ? " border-width: 3px 0px 3px 3px;"
-      : " border-width: 3px 3px 3px 0px;"}
+  position: relative;
 `;
 
 const NameInput = styled.input`
-  width: 34rem;
+  width: 45rem;
   height: 4rem;
 
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   box-sizing: border-box;
 
-  border: 3px solid ${T.blue[600]};
-  border-width: 3px 0px 3px 0px;
+  box-shadow: 0 0 0 2px ${T.blue[500]};
+  border-radius: 99rem;
 
   ${fonts.Regular}
   color: ${T.gray[600]};
@@ -83,7 +61,34 @@ const NameInput = styled.input`
 
   transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
+  &:focus {
+    box-shadow: 0 0 0 3px ${T.blue[700]};
+    transform: scale(1.01);
+  }
+
   &::placeholder {
     color: ${T.gray[500]};
   }
+
+  &::after {
+  }
+`;
+
+const SearchButton = styled.button`
+  width: fit-content;
+  height: fit-content;
+
+  position: absolute;
+
+  right: 1.5rem;
+  top: 1.25rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: white;
+  border: none;
+
+  cursor: pointer;
 `;

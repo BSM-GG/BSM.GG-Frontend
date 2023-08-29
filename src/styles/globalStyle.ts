@@ -5,6 +5,12 @@ import PretendardBold from "../fonts/Pretendard-Bold.ttf";
 import PretendardExtraBold from "../fonts/Pretendard-ExtraBold.ttf";
 
 const GlobalStyle = createGlobalStyle`
+body {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
 
 @font-face {
   font-family: 'PretendardRegular';
@@ -38,6 +44,10 @@ const GlobalStyle = createGlobalStyle`
 * {
   margin: 0;
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 #root {
