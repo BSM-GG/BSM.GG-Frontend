@@ -12,11 +12,10 @@ import { Flex, Text } from "../common";
 import { useState } from "react";
 
 const UserGameRecord = () => {
+  const [show, setShow] = useState(false);
 
-  const [씨발, 개씨발] = useState(false);
-  
   return (
-    <Container 씨발={씨발}>
+    <Container show={show}>
       <GameInfoContainer>
         <GameStatus />
         <InGameInformation />
@@ -37,17 +36,21 @@ const UserGameRecord = () => {
           </Flex>
         ))}
       </GamePlayerListContainer>
-      <RecordUnrollButton onClick={()=> {
-        개씨발(!씨발);
-      }}><Arrow direction={씨발? 180 : 0} /></RecordUnrollButton>
-      <DetailedGameInformation show={씨발} />
+      <RecordUnrollButton
+        onClick={() => {
+          setShow(!show);
+        }}
+      >
+        <Arrow direction={show ? 180 : 0} />
+      </RecordUnrollButton>
+      <DetailedGameInformation show={show} />
     </Container>
   );
 };
 
 export default UserGameRecord;
 
-const Container = styled.div<{씨발: boolean}>`
+const Container = styled.div<{ show: boolean }>`
   width: 59rem;
   height: 11rem;
 
@@ -58,7 +61,7 @@ const Container = styled.div<{씨발: boolean}>`
   align-items: center;
 
   background-color: ${T.blue[300]};
-  margin-bottom: ${props => props.씨발 ? "21rem" : 0};
+  margin-bottom: ${(props) => (props.show ? "33rem" : 0)};
 
   border-radius: 8px;
 `;

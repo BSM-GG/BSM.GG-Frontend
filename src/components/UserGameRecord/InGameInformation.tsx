@@ -21,13 +21,13 @@ const InGameInformation = () => {
               width={1.7}
               height={1.7}
               borderRadius={5}
-              imgLink="https://i.namu.wiki/i/r-Gvk6fvQkseAAJeExzZEa64zh5Q8zD7CA-97mhNNq1y-Q0AbBE04nwowv5raJ3zZcoyLBvDxbrpPZf6EiEgYw.webp"
+              imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
             />
             <UserIcon
               width={1.7}
               height={1.7}
               borderRadius={5}
-              imgLink="https://i.namu.wiki/i/RbsKn8EdID5emXA-sOPJnYMY9JEsXQQ9MRMBBp-V5oVhWEOYORAqhk-1hfqEX9T7zSHj785d3SK8H7fgF7jfKw.webp"
+              imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
             />
           </Flex>
           <Flex direction="column" gap={0.25}>
@@ -43,7 +43,7 @@ const InGameInformation = () => {
               height={1.7}
               imgSize="80%"
               borderRadius={5}
-              imgLink="https://i.namu.wiki/i/Y7xPqPJVXX-U2QPMTz3ORxTzT_F0_gm7PWb1SgtNFjKaJZ22jh5nG_Q0HKHf9fQtdysfPtC449OvpEpBFKP-jQ.webp"
+              imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
             />
           </Flex>
         </Flex>
@@ -70,14 +70,14 @@ const InGameInformation = () => {
             width={2}
             height={2}
             borderRadius={5}
-            imgLink="https://i.namu.wiki/i/PMLxOKYy9Or5o2j27fgq_LoKEoi1pFUw5SmY94SO0q1BRnAQ533mEJerdpDSg7oNVNuV_yU0yf_3ho6thaVWBw.webp"
+            imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
           ></UserIcon>
         ))}
         <UserIcon
           width={2}
           height={2}
           borderRadius={99}
-          imgLink="https://i.namu.wiki/i/5Iu7kqgiXsQd-nqIWpSrY3l-W_eUACY5Nb-o2S9otBqBVuD9kBHNxy6r6FWMK3-5HLZ3WxPa0m98aczjd57BMw.webp"
+          imgLink="https://opgg-static.akamaized.net/meta/images/lol/spell/SummonerHaste.png?image=q_auto,f_webp,w_64&v=1692943905742"
         ></UserIcon>
       </UsedItems>
     </Container>
