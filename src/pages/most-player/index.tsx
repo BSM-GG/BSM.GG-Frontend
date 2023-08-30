@@ -31,14 +31,14 @@ const MostPlayer = () => {
               playerFirseText={"번"}
               playerLastText={"죽었습니다"}
               textColor={"white"}
-              backGroundColor={T.blue[700]}
+              backGroundColor={T.red[300]}
             />
             <PlayerInfo
               playerPoint={1250}
               playerFirseText={"번"}
               playerLastText={"킬을 했습니다"}
               textColor={"white"}
-              backGroundColor={T.red[300]}
+              backGroundColor={T.blue[700]}
             />
             <PlayerInfo
               playerPoint={1250}
@@ -49,7 +49,7 @@ const MostPlayer = () => {
             />
             <PlayerInfo
               playerPoint={1250}
-              playerFirseText={"lp"}
+              playerFirseText={"LP"}
               playerLastText={"올렸습니다"}
               textColor={"black"}
               backGroundColor={T.gray[200]}
@@ -69,6 +69,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 5rem;
+  box-sizing: border-box;
 `;
 
 const MostPlayerWrapper = styled.div`
