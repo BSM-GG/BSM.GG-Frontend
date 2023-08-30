@@ -25,13 +25,13 @@ const UserProfile = () => {
             imgLink="https://yt3.googleusercontent.com/ytc/AOPolaResdZdcww3BSR0bGFsCTfxsKd1__xFXwSxqQ4qRg=s900-c-k-c0x00ffffff-no-rj"
           />
           <UserLevelWrapper>
-            <Text type={fonts.Medium} textSize={1} color={"white"}>
+            <Text type={fonts.Medium} textSize={1} color="white">
               82
             </Text>
           </UserLevelWrapper>
         </UserImgWrapper>
         <UserNickNameWrapper>
-          <Text type={fonts.Medium} textSize={1.8} color={"black"}>
+          <Text type={fonts.Medium} textSize={1.8} color="black">
             Hide on Bush
           </Text>
         </UserNickNameWrapper>
