@@ -37,10 +37,6 @@ const SchoolRank = () => {
         <Text type={fonts.Medium} textSize={1.2}>
           등록된 소환사가 없습니다..
         </Text>
-        <Emozi
-          src="https://i.namu.wiki/i/7qHC29f5HWglaVxnPFqmPrSA1PzRIOwPeCTvLGopOW16s9PIJ2LK0VecwHZY7tkMxWD4I7jxQuDJL0KM3kzlhg.webp"
-          alt="bluemon"
-        />
       </NonRegisterUser>
     ) : (
       filteredUsers
