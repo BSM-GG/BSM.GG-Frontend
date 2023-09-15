@@ -1,8 +1,8 @@
-import { Header } from "./components";
+import Header from "./components/Header";
 import { ROUTER } from "./constants/router.constant";
 import DuoRequestPage from "./pages/duo-requestpage";
-import LandingPage from "./pages/LandingPage";
-import UserPage from "./pages/UserPage";
+import LandingPage from "./pages/landingpage";
+import UserPage from "./pages/userpage";
 import SchoolRank from "./pages/schoolRankPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MostPlayer from "./pages/most-player";

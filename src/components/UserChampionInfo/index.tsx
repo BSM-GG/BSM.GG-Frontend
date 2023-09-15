@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 import * as T from "../../styles/theme";
-import { Flex, Text } from "../common";
 import UserIcon from "../jpg/userIcon";
+import { Flex, Text } from "components/common";
 
 const UserChampionInfo = () => {
   return (
