@@ -1,13 +1,13 @@
 import * as S from "./style";
-import SearchIcon from "../../components/svg/searchIcon700";
+import SearchIcon from "components/svg/searchIcon700";
 import TopRank from "./TopRankUser";
-import { userData_dummy } from "../../dummy/userRank.dummy";
+import { userData_dummy } from "dummy/userRank.dummy";
 import Rank from "./RankUser";
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { styled } from "styled-components";
-import { Text } from "../../components/common";
-import { fonts } from "../../styles/font";
+import { Text } from "components/common";
+import { fonts } from "styles/font";
 
 const SchoolRank = () => {
   const [users, setUsers] = useState(userData_dummy.slice(0, 30));

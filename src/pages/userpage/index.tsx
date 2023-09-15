@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import * as T from "../../styles/theme";
-import { Flex, Text } from "../../components/common";
-import UserIcon from "../../components/jpg/userIcon";
-import UserGameRecord from "../../components/UserGameRecord";
-import { UserChampionInfo } from "../../components";
-import { fonts } from "../../styles/font";
+import * as T from "styles/theme";
+import { Flex, Text } from "components/common";
+import UserIcon from "components/jpg/userIcon";
+import UserGameRecord from "components/UserGameRecord";
+import { UserChampionInfo } from "components";
+import { fonts } from "styles/font";
 
 const UserPage = () => {
   return (

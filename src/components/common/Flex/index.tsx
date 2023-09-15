@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import FlexBoxAttribute from "../../../types/FlexBoxAttributeProps.type";
+import FlexBoxAttribute from "types/FlexBoxAttributeProps.type";
 
 const Flex = styled.div<FlexBoxAttribute>`
   width: fit-content;

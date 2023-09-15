@@ -1,4 +1,4 @@
-import SVGAttributeProps from "../../types/SVGAttributeProps.type";
+import SVGAttributeProps from "types/SVGAttributeProps.type";
 
 const SearchIcon = ({ width = 1.5, height = 1.5 }: SVGAttributeProps) => {
   return (

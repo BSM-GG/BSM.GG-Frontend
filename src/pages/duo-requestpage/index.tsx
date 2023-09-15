@@ -1,8 +1,8 @@
 import React from "react";
-import { Text } from "../../components/common";
-import * as T from "../../styles/theme";
+import { Text } from "components/common";
+import * as T from "styles/theme";
 import { styled } from "styled-components";
-import { fonts } from "../../styles/font";
+import { fonts } from "styles/font";
 import RequestListItem from "./RequestListItem";
 
 const DuoRequestPage = () => {

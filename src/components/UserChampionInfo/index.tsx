@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import * as T from "../../styles/theme";
+import * as T from "styles/theme";
 import UserIcon from "../jpg/userIcon";
 import { Flex, Text } from "components/common";
 

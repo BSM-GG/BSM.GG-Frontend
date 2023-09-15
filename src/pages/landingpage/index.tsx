@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import * as T from "../../styles/theme";
-import MainLogo from "../../components/svg/mainLogo";
-import SearchIcon from "../../components/svg/searchIcon";
-import { fonts } from "../../styles/font";
+import * as T from "styles/theme";
+import MainLogo from "components/svg/mainLogo";
+import SearchIcon from "components/svg/searchIcon";
+import { fonts } from "styles/font";
 
 const LandingPage = () => {
   return (

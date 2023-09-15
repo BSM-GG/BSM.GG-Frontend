@@ -1,4 +1,4 @@
-import JPGAttributeProps from "../../types/JPGAttributeProps.type";
+import JPGAttributeProps from "types/JPGAttributeProps.type";
 import { styled } from "styled-components";
 
 const UserIcon = styled.div<JPGAttributeProps>`
