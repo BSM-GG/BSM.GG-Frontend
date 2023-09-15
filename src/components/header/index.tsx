@@ -11,7 +11,9 @@ const Header = () => {
   return (
     <Container>
       <HeaderContainer>
-        <MainLogo />
+        <Link to={ROUTER.HOME}>
+          <MainLogo />
+        </Link>
         <MenuContainer>
           <Link to={ROUTER.SCHOOL_RANK}>
             <MenuTitle>교내랭킹</MenuTitle>
