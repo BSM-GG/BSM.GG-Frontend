@@ -3,7 +3,6 @@ import * as T from "../../styles/theme";
 import MainLogo from "../../components/svg/MainLogo";
 import SearchIcon from "../../components/svg/SearchIcon";
 import { fonts } from "../../styles/font";
-import { ROUTER } from "../../constants/router.constant";
 
 const LandingPage = () => {
   return (

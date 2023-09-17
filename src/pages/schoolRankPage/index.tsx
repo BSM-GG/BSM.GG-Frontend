@@ -1,5 +1,5 @@
 import * as S from "./style";
-import SearchIcon from "../../components/svg/SearchIcon700";
+import SearchIcon from "../../components/svg/searchIcon700";
 import TopRank from "./TopRankUser";
 import { userData_dummy } from "../../dummy/userRank.dummy";
 import Rank from "./RankUser";
@@ -82,8 +82,8 @@ const SchoolRank = () => {
         <S.UserWrapper>{displayUsers}</S.UserWrapper>
         <S.Nav>
           <StyledPagination
-            previousLabel={"<"}
-            nextLabel={">"}
+            previousLabel="<"
+            nextLabel=">"
             pageCount={pageCount}
             onPageChange={changePage}
           />
