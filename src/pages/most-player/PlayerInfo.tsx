@@ -1,7 +1,6 @@
-import { fonts } from "../../styles/font";
-import { Text } from "../../components/common";
+import { fonts } from "styles/font";
+import { Text } from "components/common";
 import { styled } from "styled-components";
-import * as T from "../../styles/theme";
 
 interface playerInfo {
   playerPoint: number;

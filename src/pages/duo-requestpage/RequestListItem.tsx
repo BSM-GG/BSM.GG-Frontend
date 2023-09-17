@@ -1,8 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
-import { Text, Flex } from "../../components/common";
-import * as T from "../../styles/theme";
-import { fonts } from "../../styles/font";
+import { Text, Flex } from "components/common";
+import * as T from "styles/theme";
+import { fonts } from "styles/font";
 
 const RequestListItem = () => {
   return (

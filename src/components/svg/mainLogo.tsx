@@ -1,5 +1,5 @@
-import SVGAttributeProps from "../../types/SVGAttributeProps.type";
-import * as T from "../../styles/theme";
+import SVGAttributeProps from "types/SVGAttributeProps.type";
+import * as T from "styles/theme";
 
 const MainLogo = ({ width = 7.438, height = 2.25 }: SVGAttributeProps) => {
   return (

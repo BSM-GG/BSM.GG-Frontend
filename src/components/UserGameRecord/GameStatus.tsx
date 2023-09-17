@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import * as T from "../../styles/theme";
+import * as T from "styles/theme";
 import { Flex, Text } from "../common";
-import { fonts } from "../../styles/font";
+import { fonts } from "styles/font";
 
 const GameStatus = () => {
   return (

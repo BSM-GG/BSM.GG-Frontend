@@ -1,7 +1,7 @@
-import * as T from "../../styles/theme";
+import * as T from "styles/theme";
 import { styled } from "styled-components";
-import { Text } from "../../components/common";
-import { fonts } from "../../styles/font";
+import { Text } from "components/common";
+import { fonts } from "styles/font";
 
 const OneSentence = () => {
   return (

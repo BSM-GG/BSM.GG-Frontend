@@ -1,8 +1,8 @@
 import { styled } from "styled-components";
-import * as T from "../../styles/theme";
-import { fonts } from "../../styles/font";
-import { Text } from "../../components/common";
-import UserIcon from "../../components/jpg/userIcon";
+import * as T from "styles/theme";
+import { fonts } from "styles/font";
+import { Text } from "components/common";
+import UserIcon from "components/jpg/userIcon";
 
 const UserProfile = () => {
   const calculateRatio = (win: number, lose: number) => {

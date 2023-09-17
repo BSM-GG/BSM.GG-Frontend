@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Flex } from "../../components/common";
-import { fonts } from "../../styles/font";
-import * as T from "../../styles/theme";
+import { Flex } from "components/common";
+import { fonts } from "styles/font";
+import * as T from "styles/theme";
 
 export interface UserData {
   id: number;

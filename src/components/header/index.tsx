@@ -1,17 +1,19 @@
 import { styled } from "styled-components";
-import MainLogo from "../svg/MainLogo";
+import MainLogo from "../svg/mainLogo";
 
-import { fonts } from "../../styles/font";
-import * as T from "../../styles/theme";
+import { fonts } from "styles/font";
+import * as T from "styles/theme";
 
-import { ROUTER } from "../../constants/router.constant";
+import { ROUTER } from "constants/router.constant";
 import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <Container>
       <HeaderContainer>
-        <MainLogo />
+        <Link to={ROUTER.HOME}>
+          <MainLogo />
+        </Link>
         <MenuContainer>
           <Link to={ROUTER.SCHOOL_RANK}>
             <MenuTitle>교내랭킹</MenuTitle>

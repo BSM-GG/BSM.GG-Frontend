@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
-import * as T from "../../styles/theme";
-import { fonts } from "../../styles/font";
+import * as T from "styles/theme";
+import { fonts } from "styles/font";
 import UserIcon from "../jpg/userIcon";
 import GameStatus from "./GameStatus";
 import GameDetail from "./GameDetail";

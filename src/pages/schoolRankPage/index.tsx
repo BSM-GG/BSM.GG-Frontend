@@ -1,13 +1,13 @@
 import * as S from "./style";
-import SearchIcon from "../../components/svg/searchIcon700";
+import SearchIcon from "components/svg/searchIcon700";
 import TopRank from "./TopRankUser";
-import { userData_dummy } from "../../dummy/userRank.dummy";
+import { userData_dummy } from "dummy/userRank.dummy";
 import Rank from "./RankUser";
 import React, { useState } from "react";
 import ReactPaginate from "react-paginate";
 import { styled } from "styled-components";
-import { Text } from "../../components/common";
-import { fonts } from "../../styles/font";
+import { Text } from "components/common";
+import { fonts } from "styles/font";
 
 const SchoolRank = () => {
   const [users, setUsers] = useState(userData_dummy.slice(0, 30));
@@ -37,10 +37,6 @@ const SchoolRank = () => {
         <Text type={fonts.Medium} textSize={1.2}>
           등록된 소환사가 없습니다..
         </Text>
-        <Emozi
-          src="https://i.namu.wiki/i/7qHC29f5HWglaVxnPFqmPrSA1PzRIOwPeCTvLGopOW16s9PIJ2LK0VecwHZY7tkMxWD4I7jxQuDJL0KM3kzlhg.webp"
-          alt="bluemon"
-        />
       </NonRegisterUser>
     ) : (
       filteredUsers

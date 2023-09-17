@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
-import { Flex } from "../../components/common";
-import { fonts } from "../../styles/font";
-import * as T from "../../styles/theme";
-import Challenger from "../../components/svg/image 153.svg";
-import GrandMaster from "../../components/svg/Grandmaster.svg";
-import Master from "../../components/svg/Master.svg";
+import { Flex } from "components/common";
+import { fonts } from "styles/font";
+import * as T from "styles/theme";
+import Challenger from "components/svg/image 153.svg";
+import GrandMaster from "components/svg/Grandmaster.svg";
+import Master from "components/svg/Master.svg";
 
 export interface UserData {
   id: number;
