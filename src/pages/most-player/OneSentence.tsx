@@ -6,9 +6,9 @@ import { fonts } from "styles/font";
 const OneSentence = () => {
   return (
     <SentenceWrapper>
-      한줄평
+      <Text type={fonts.Bold}>한줄평</Text>
       <OneSentenceWrapper>
-        <Text textSize={1.2} color={"black"} type={fonts.Regular}>
+        <Text textSize={1.2} color="black" type={fonts.Regular}>
           롤 할 시간에 운동해서 살을 빼는것은 어떨까요?
         </Text>
       </OneSentenceWrapper>

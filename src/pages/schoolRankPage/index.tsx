@@ -78,8 +78,8 @@ const SchoolRank = () => {
         <S.UserWrapper>{displayUsers}</S.UserWrapper>
         <S.Nav>
           <StyledPagination
-            previousLabel={"<"}
-            nextLabel={">"}
+            previousLabel="<"
+            nextLabel=">"
             pageCount={pageCount}
             onPageChange={changePage}
           />
