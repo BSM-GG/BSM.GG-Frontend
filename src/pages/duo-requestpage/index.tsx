@@ -41,6 +41,8 @@ const HGroup = styled.hgroup`
   width: 100%;
   display: flex;
   align-items: center;
+
+  margin-top: 10rem;
 `;
 
 const WriteButton = styled.button`

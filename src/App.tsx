@@ -1,4 +1,4 @@
-import Header from "components/Header";
+import { Header } from "components";
 import { ROUTER } from "constants/router.constant";
 import DuoRequestPage from "pages/duo-requestpage";
 import LandingPage from "pages/landingpage";

@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 5rem;
 `;
 
 export const CenterWrapper = styled.div`
