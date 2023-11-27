@@ -1,3 +1,3 @@
 export { default as Header } from "./header";
-export { default as UserChampionInfo } from "./usersChampionInfo";
-export { default as UserGameRecord } from "./usersGameRecord";
+export { default as UserChampionInfo } from "./userChampionInfo";
+export { default as UserGameRecord } from "./userGameRecord";
