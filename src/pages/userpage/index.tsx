@@ -2,7 +2,7 @@ import styled from "styled-components";
 import * as T from "styles/theme";
 import { Flex, Text } from "components/common";
 import UserIcon from "components/jpg/userIcon";
-import UserGameRecord from "components/userGameRecord";
+import UserGameRecord from "components/usersGameRecord";
 import { UserChampionInfo } from "components";
 import { fonts } from "styles/font";
 
